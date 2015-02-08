@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1CD771BF-8D6D-4F37-9FD6-D6A59AF31DAD}</ProjectGuid>
+    <ProjectGuid>{F8D5E988-F85F-4F36-A717-854FFC9B0386}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_08.MaximalSum</RootNamespace>
-    <AssemblyName>08.MaximalSum</AssemblyName>
+    <RootNamespace>_10.FindSumInArray</RootNamespace>
+    <AssemblyName>10.FindSumInArray</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -41,7 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MaximalSum.cs" />
+    <Compile Include="FindSumInArray.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Linq;
 
+/* Write a program that reads two integer arrays from the console and compares them
+element by element.
+*/
+
 class CompareArrays
 {
     static void Main()
-    {
-        // Write a program that reads two integer arrays from the console and compares them element by element.
-                
+    {                
         Console.Write("Enter the length of the first array and press ENTER: ");
         int firstLength = int.Parse(Console.ReadLine());
         int[] firstIntegerArray = new int[firstLength];
@@ -27,10 +29,11 @@ class CompareArrays
             secondIntegerArray[i] = int.Parse(Console.ReadLine());
         }
 
-        // Using Sytem.Linq 
-        // Console.WriteLine("The two arrays are equal ==> {0}",firstArray.SequenceEqual(secondArray));
+        /* Using Sytem.Linq 
+        // Console.WriteLine("The two arrays are equal ==> {0}",firstArray.SequenceEqual
+         (secondArray));
+        Else: */
 
-        // Else: 
         if (firstLength != secondLength)
         {
             Console.WriteLine("The two arrays are not equal.");
