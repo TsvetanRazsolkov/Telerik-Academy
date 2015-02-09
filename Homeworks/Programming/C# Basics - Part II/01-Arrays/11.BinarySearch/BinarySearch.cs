@@ -16,9 +16,10 @@ class BinarySearch
         {
             Console.Write("arrayOfIntegers[{0}] = ", i);
             arrayOfIntegers[i] = int.Parse(Console.ReadLine());
-        }
+        }        
         Console.Write("Enter the element you seek and press ENTER: ");
         int searchedValue = int.Parse(Console.ReadLine());
+        Array.Sort(arrayOfIntegers);
 
         int indexMin = 0;
         int indexMax = arrayOfIntegers.Length - 1;        
