@@ -42,8 +42,7 @@ class MaximalIncreasingSequence
                 bestStart = i - (bestLength - 1);
             }
         }
-
-        Console.WriteLine("The input array is: " + string.Join(", ", integerArray));
+                
         Console.Write("Longest sequence of increasing elements: ");
         for (int i = bestStart; i < bestStart + bestLength; i++)
         {
