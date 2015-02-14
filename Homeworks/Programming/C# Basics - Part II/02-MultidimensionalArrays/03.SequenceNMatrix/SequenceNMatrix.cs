@@ -22,7 +22,7 @@ class SequenceNMatrix
         string[,] matrix = ReadMatrixFromConsole();
 
         string direction = string.Empty;
-        int maxSequence = 1;
+        int maxSequence = 0;
         int bestRowIndex = 0;
         int bestColIndex = 0;
         int currentRowIndex = 0;
