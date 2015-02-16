@@ -6,9 +6,9 @@ class Program
 {
     static void Main()
     {
-        Console.WriteLine("Testing SayHello - " + TestGreeting());
+        Console.WriteLine("Testing AppearanceCounter - " + TestCountAppearances());
     }
-    static string TestGreeting()
+    static string TestCountAppearances()
     {
         if (AppearanceCount.CountAppearances(new int[] { 3, 2, 2, 5, 1, -8, 7, 2 }, 2) != 3)
         {

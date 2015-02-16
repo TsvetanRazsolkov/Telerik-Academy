@@ -12,7 +12,7 @@ public class SayHello
     {
         Console.Write("Enter your name and press ENTER: ");
         string name = Console.ReadLine();
-        PrintHello(name);
+        Console.WriteLine(PrintHello(name));
     }
 
     public static string PrintHello(string name)
