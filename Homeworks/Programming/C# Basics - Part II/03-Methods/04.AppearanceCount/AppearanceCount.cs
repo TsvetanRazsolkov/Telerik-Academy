@@ -3,7 +3,7 @@
 /* Write a method that counts how many times given number appears in given array.
 Write a test program to check if the method is workings correctly. */
 
-class AppearanceCount
+public class AppearanceCount
 {
     static void Main()
     {
@@ -16,7 +16,7 @@ class AppearanceCount
             appearances);
     }
 
-    static int CountAppearances(int[] arrayOfNumbers, int numberToCheck)
+    public static int CountAppearances(int[] arrayOfNumbers, int numberToCheck)
     {
         int count = 0;
         for (int i = 0; i < arrayOfNumbers.Length; i++)

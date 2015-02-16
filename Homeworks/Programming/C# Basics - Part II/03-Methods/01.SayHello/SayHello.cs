@@ -6,18 +6,17 @@ Example:
 input	    output
 Peter	    Hello, Peter!  */
 
-class SayHello
+public class SayHello
 {
     static void Main()
     {
-        PrintHello();
-    }
-
-    static void PrintHello()
-    {
         Console.Write("Enter your name and press ENTER: ");
         string name = Console.ReadLine();
-        
-        Console.WriteLine("Hello, {0}!", name);
+        PrintHello(name);
+    }
+
+    public static string PrintHello(string name)
+    {       
+        return "Hello, " + name + "!";
     }
 }
