@@ -2,6 +2,7 @@ A string is an object of type String whose value is text. Internally, the text i
 String objects are immutable: they cannot be changed after they have been created. All of the String methods and C# operators that appear to modify a string actually return the results in a new string object. 
 There is no null-terminating character at the end of a C# string; therefore a C# string can contain any number of embedded null characters ('\0'). 
 Strings are very similar to the char arrays (char[]), but unlike them, they cannot be modified. Like the arrays, they have properties such as Length, which returns the length of the string and allows access by index.
+
  Notable methods:
 - Compare() - Compares two specified String objects and returns an integer that indicates their relative position in the sort order.
 - Format() - Replaces one or more format items in a specified string with the string representation of a specified object.
