@@ -40,9 +40,13 @@ class DownloadFile
         {
             Console.WriteLine(ioe.Message);
         }
+        catch (Exception)
+        {
+            Console.WriteLine("Unknown error!");
+        }
         finally
-        {            
+        {
             downloader.Dispose();
-        }        
+        }
     }
 }
