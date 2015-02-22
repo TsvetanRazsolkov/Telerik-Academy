@@ -1,0 +1,3 @@
+In this chapter we will review how to work with text files in C#.
+We will explain what a stream is, what its purpose is, and how to use it.
+We will explain what a text file is and how can you read and write data to a text file.

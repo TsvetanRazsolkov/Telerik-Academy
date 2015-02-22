@@ -1,0 +1,9 @@
+﻿blabla.
+This is odd: Problem 1. Odd lines
+Write a program that reads a text file and prints on the console its odd lines.
+This is odd: Problem 2. Concatenate text files
+Write a program that concatenates two text files into another text file.
+This is odd: Problem 3. Line numbers
+Write a program that reads a text file and inserts line numbers in front of each of its lines.
+This is odd: The result should be written to another text file.
+Problem 4. Compare text files
