@@ -131,6 +131,6 @@ class RemoveWords
         {
             Console.WriteLine(ae.Message);
         }
-        return true; // Unreachable code - interesting why the compiler insist on having it :)
+        return true;
     }
 }
