@@ -18,7 +18,9 @@
             GSM testThree = new GSM("Lumia 535", "Microsoft", 1000M, "Asen", new Battery("Some model", 552, 11, BatteryType.Li_Ion),
                                   new Display(5, 16000000));
 
-            GSM[] testPhones = {testOne, testTwo, testThree, GSM.Iphone4s};
+            GSM testFour = new GSM("Nexus", "Google");
+
+            GSM[] testPhones = {testOne, testTwo, testThree, testFour, GSM.Iphone4s};
 
             foreach (var phone in testPhones)
             {

@@ -147,10 +147,28 @@
 
         public override string ToString()
         {
-            string characteristics = string.Format("Model: {0}\nManufacturer: {1}\nPrice: {2:C}\nOwner: {3}\n{4}\n{5}",
-                this.Model, this.Manufacturer, this.Price, this.Owner, this.Battery.ToString(), this.Display.ToString());
+            StringBuilder characteristics = new StringBuilder();
 
-            return characteristics;
+            characteristics.AppendLine("Model: " + this.Model);
+            characteristics.AppendLine("Manufacturer: " + this.Manufacturer);
+            if (this.Price != null)
+            {
+                characteristics.AppendLine("Price: " + this.Price);
+            }
+            if (this.Owner != null)
+            {
+                characteristics.AppendLine("Owner: " + this.Owner);
+            }
+            if (this.Battery != null)
+            {
+                characteristics.AppendLine(this.Battery.ToString());
+            }
+            if (this.Display != null)
+            {
+                characteristics.Append(this.Display.ToString());
+            }
+            
+            return characteristics.ToString();
         }
     }
 }
