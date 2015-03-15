@@ -28,7 +28,7 @@
             result.AppendFormat("Total price of calls in the history: {0:C}", totalPriceOfCalls);
             result.AppendLine(Environment.NewLine);
 
-            Call longestCall = testPhone.CallHistory.OrderByDescending(x => x.CallDuration).FirstOrDefault();
+            Call longestCall = testPhone.CallHistory.OrderBy(x => x.CallDuration).LastOrDefault();
             testPhone.DeleteCall(longestCall);
 
             totalPriceOfCalls = testPhone.CalculateTotalCallPrice(CallPricePerMinute);
