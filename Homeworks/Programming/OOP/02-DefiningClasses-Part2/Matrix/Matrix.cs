@@ -13,7 +13,7 @@
         {
             this.Rows = rows;
             this.Cols = cols;
-            this.matrix = new T[this.Rows, this.Cols];
+            this.MatrixToFill = new T[this.Rows, this.Cols];
         }
 
         public int Rows
@@ -40,6 +40,12 @@
                 }
                 this.cols = value;
             }
+        }
+
+        public T[,] MatrixToFill
+        {
+            get { return this.matrix; }
+            private set { this.matrix = value; }
         }
 
         public T this[int row, int col]
