@@ -19,12 +19,12 @@
 
         public void AddPointToPath(Point3D point)
         {
-            this.PathOfPoints.Add(point);
+            this.pathOfPoints.Add(point);
         }
 
         public void AddPointsToPath(params Point3D[] points)
         {
-            this.PathOfPoints.AddRange(points);
+            this.pathOfPoints.AddRange(points);
         }
 
         public override string ToString()

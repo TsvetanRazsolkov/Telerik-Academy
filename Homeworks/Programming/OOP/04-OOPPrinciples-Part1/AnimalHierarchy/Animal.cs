@@ -48,10 +48,6 @@
             get { return this.gender; }
             protected set
             {
-                if (value != Gender.Female && value != Gender.Male)
-                {
-                    throw new ArgumentException("Gender must be male or female.");
-                }
                 this.gender = value;
             }
         }

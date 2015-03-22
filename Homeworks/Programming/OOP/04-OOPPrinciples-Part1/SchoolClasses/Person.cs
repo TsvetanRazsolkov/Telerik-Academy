@@ -2,7 +2,7 @@
 {
     using System;
 
-    public class Person : IComment
+    public abstract class Person : IComment
     {
         private string name;
         private string comment = string.Empty;
