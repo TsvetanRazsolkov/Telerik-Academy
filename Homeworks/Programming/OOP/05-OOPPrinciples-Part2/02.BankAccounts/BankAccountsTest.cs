@@ -58,10 +58,10 @@
 
         public static void FillBankWithAccounts(Bank someBank)
         {
-            someBank.Accounts.Add(new Deposit(new Individual("Pesho", "45772121455"), 455.5M, 0.25M));
-            someBank.Accounts.Add(new Loan(new Company("Vaksa Ltd.", "GL0994453", "241555110"), -45000M, 1.25M));
-            someBank.Accounts.Add(new Mortgage(new Individual("Gosho", "451224554552"), -50000M, 0.54M));
-            someBank.Accounts.Add(new Deposit(new Company("Shlyokavica", "ddf232", "454654"), 120000M, 0.15M));
+            someBank.AddAccount(new Deposit(new Individual("Pesho", "45772121455"), 455.5M, 0.25M));
+            someBank.AddAccount(new Loan(new Company("Vaksa Ltd.", "GL0994453", "241555110"), -45000M, 1.25M));
+            someBank.AddAccount(new Mortgage(new Individual("Gosho", "451224554552"), -50000M, 0.54M));
+            someBank.AddAccount(new Deposit(new Company("Shlyokavica", "ddf232", "454654"), 120000M, 0.15M));
         }
     }
 }

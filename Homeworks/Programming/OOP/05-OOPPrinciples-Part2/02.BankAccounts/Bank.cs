@@ -10,16 +10,17 @@
 
         public Bank()
         {
-            this.Accounts = new List<Account>();
+            this.accounts = new List<Account>();
         }
 
-        public List<Account> Accounts
+        public List<Account> Accounts // Account can only be added through the class method AddAccount()
         {
-            get { return this.accounts; }
-            private set
-            {
-                this.accounts = value;
-            }
+            get { return new List<Account>(this.accounts); }
+        }
+
+        public void AddAccount(Account acc)
+        {
+            this.accounts.Add(acc);
         }
     }
 }
