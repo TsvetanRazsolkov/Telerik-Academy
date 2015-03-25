@@ -13,7 +13,9 @@
 
         public List<Point3D> PathOfPoints
         {
-            get { return new List<Point3D>(this.pathOfPoints); }
+            get { return new List<Point3D>(this.pathOfPoints); } // This way when someone calls the property
+            // outside of the class and atempts to add or remove element from the list he/she will not 
+            // change the field. The only way to do so is to use the instance methods from this class;
             private set { this.pathOfPoints = value; }
         }
 

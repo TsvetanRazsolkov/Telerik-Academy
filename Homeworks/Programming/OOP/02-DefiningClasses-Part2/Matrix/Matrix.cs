@@ -135,10 +135,14 @@
             {
                 for (int col = 0; col < matrix.Cols; col++)
                 {
-                    if ((dynamic)matrix[row, col] != 0) // Check for non-zero elements;
+                    if (matrix[row, col].CompareTo(default(T)) != 0) // Check for non-zero elements;
                     {
                         return true;
-                    }                    
+                    }
+                    //if ((dynamic)matrix[row, col] != 0) // Same, using dynamic;
+                    //{
+                    //    return true;
+                    //}
                 }
             }
             return false;
@@ -150,10 +154,14 @@
             {
                 for (int col = 0; col < matrix.Cols; col++)
                 {
-                    if ((dynamic)matrix[row, col] != 0) // Check for non-zero elements;
+                    if (matrix[row, col].CompareTo(default(T)) != 0) // Check for non-zero elements;
                     {
                         return false;
                     }
+                    //if ((dynamic)matrix[row, col] != 0) // Same, using dynamic;
+                    //{
+                    //    return false;
+                    //}
                 }
             }
             return true;
