@@ -232,7 +232,6 @@ namespace HTMLRenderer
         static void Main()
         {
             FileStream fs = new FileStream("..\\..\\Test.txt", FileMode.Create);
-            // First, save the standard output.
             StreamWriter sw = new StreamWriter(fs);
             Console.SetOut(sw);
             
