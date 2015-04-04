@@ -11,13 +11,6 @@ namespace AcademyRPG
         {
             switch (commandWords[1])
             {
-                case "lumberjack":                    
-                case "guard":                    
-                case "tree":
-                    {
-                        base.ExecuteCreateObjectCommand(commandWords);
-                        break;
-                    }
                 case "knight":
                     {
                         string name = commandWords[2];
@@ -55,6 +48,11 @@ namespace AcademyRPG
                         this.AddObject(new Ninja(name, position, owner));
                         break;
                     }
+					default:
+					{
+						base.ExecuteCreateObjectCommand(commandWords);
+                        break;
+					}
             }
         }
     }
