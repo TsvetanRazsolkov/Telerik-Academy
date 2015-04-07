@@ -27,6 +27,7 @@ namespace Cosmetics.Products
 
         public void RemoveProduct(IProduct product)
         {
+            Validator.CheckIfNull(product, string.Format(GlobalErrorMessages.ObjectCannotBeNull, "Product to remove"));
             this.productList.Remove(product);
         }
 
