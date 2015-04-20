@@ -1,0 +1,78 @@
+﻿body, section, header, table, td, th, tr, h1, h2, a, dl, dt, dd {
+    padding:0;
+    margin:0;
+}
+body{
+    font-size:12px;
+    font-family:Arial;
+}
+section {
+    background-color:#595959;
+    width:30em;
+    text-align:left;
+    margin-left:1em;
+    padding-left:0.2em;
+}
+table{
+    padding-top:0.5em;
+}
+th{
+    vertical-align:top;
+    text-align:left;
+    padding-bottom: 0.8em;
+    font-size:1.4em;
+    font-weight:normal;
+    color:#C1C1C1;
+}
+td{
+    vertical-align:top;
+    padding-bottom: 0.9em;
+    padding-right:2em;
+}
+a{
+    text-decoration:none;
+    color:#EAE0A4;
+}
+a:hover{
+    text-decoration:underline;
+}
+.yellow{
+    color:#EAE0A4;
+}
+.red{
+    color:#FF051B;
+}
+.light-gray{
+    color:#C1C1C1;
+}
+.orange{
+    color:#D86E1C;
+}
+.white{
+    color:white;
+    font-style:italic;
+}
+.green-dot{
+    height: 1em;
+    vertical-align:baseline;
+}
+#dl-heading{
+    font-size:1.4em;
+    font-weight:normal;
+    vertical-align:top;
+    width:100%;
+    padding-bottom:0.8em;
+    padding-top:0.5em;
+}
+dl{
+    padding-left:0.1em;
+}
+dt{
+    float:left;
+    clear:left;
+}
+dd{
+    vertical-align:top;
+    margin-left:32%;
+    padding-bottom:1em;
+}

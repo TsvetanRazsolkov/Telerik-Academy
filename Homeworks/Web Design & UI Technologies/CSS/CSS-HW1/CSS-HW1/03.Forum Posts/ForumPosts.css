@@ -1,0 +1,72 @@
+﻿body, header, section, article, footer, nav, ul, li, h1, p, a{
+    padding:0;
+    margin:0;
+}
+
+body{
+    background-color:#a9a9a9;
+    color:#000;
+    font-family:'Times New Roman';
+    font-size:16px;
+    padding-left:0.5em;
+    padding-right:0.5em;
+}
+
+ul{
+    list-style-type:none; /* for Firefox */
+}
+
+p {
+    text-align:justify;
+}
+
+h1{
+    color:#f9fcd5;
+    font-size:2.4em;
+    text-align:center;
+    margin-top:1em;
+    margin-bottom:1em;
+}
+
+body > header{
+    text-align:center;
+}
+
+nav a{
+    font-size:1.3em;
+    font-weight:bold;
+    color:#fff ;
+    text-decoration:none;
+    margin-left:2em;
+}
+
+li:last-child a{
+    text-decoration:underline;
+}
+
+nav a:hover, article footer a:hover{
+    background-color:#ddd;
+}
+
+article h1{
+    font-size:1.6em;
+    text-align:left;
+    margin-left:0;
+}
+
+article footer{
+    margin-top:1em;
+    font-size:0.85em;    
+}
+
+article footer a{
+    text-decoration:none;
+    color:#000;
+}
+
+body > footer{
+    text-align:center;
+    font-size:1em;
+    margin-top:1em;
+    margin-bottom:1em;
+}
