@@ -1,0 +1,13 @@
+﻿body, div {
+    padding:0;
+    margin:0;
+}
+
+div {
+    margin-right:3%;
+    background-color: black;
+    border: 1px solid red;
+    -moz-border-radius: 60px;
+    -webkit-border-radius: 60px;
+    border-radius: 60px;
+}

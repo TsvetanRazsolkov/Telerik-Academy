@@ -1,44 +1,56 @@
-﻿body, table, thead, tbody, th, tr, td, img{
-    padding:0;
-    margin:0;
+﻿body, table, thead, tbody, th, tr, td, img {
+    padding: 0;
+    margin: 0;
 }
-body{
-    font-family:Arial;
-    font-size:12px;/*maybe 14*/
-    text-align:left;
+
+body {
+    font-family: Arial;
+    font-size: 12px; /*maybe 14*/
+    text-align: left;
 }
-table{
-    border-collapse:collapse;
-    border-bottom:0.1em solid rgba(128, 128, 128, 0.50);
+
+table {
+    border-collapse: collapse;
+    border-bottom: 0.1em solid rgba(128, 128, 128, 0.50);
 }
+
 thead tr {
-    border-bottom:0.1em solid rgb(128, 128, 128);
+    border-bottom: 0.1em solid rgb(128, 128, 128);
 }
-tbody tr:nth-child(2n){
-    background-color:#EDECDA;
+
+tbody tr:nth-child(2n) {
+    background-color: #EDECDA;
 }
-td{
-    padding:0.4em 4em 0.4em 0.5em;
-    vertical-align:middle;
+
+td {
+    padding: 0.4em 4em 0.4em 0.5em;
+    vertical-align: middle;
 }
-td.bordered{
-    border-right:0.1em ridge rgba(128, 128, 128, 0.30);
+
+    td.bordered {
+        border-right: 0.1em ridge rgba(128, 128, 128, 0.30);
+    }
+
+th {
+    padding: 0.4em 1em 0.4em 0.4em;
+    font-weight: normal;
+    color: white;
+    background-color: #53B604;
 }
-th{
-    padding:0.4em 1em 0.4em 0.4em;
-    font-weight:normal;
-    color:white;
-    background-color:#53B604;
+
+    th.bordered {
+        border-right: 0.1em ridge rgb(110, 110, 110);
+    }
+
+img {
+    height: 1.2em;
+    width: 1.8em;
+    vertical-align: middle;
+    margin-right: 0.5em;
 }
-th.bordered{
-    border-right:0.1em ridge rgb(110, 110, 110);
-}
-img{
-    height:1.2em;
-    width:1.8em;
-    vertical-align:middle;
-    margin-right:0.5em;
-}
-input[type=checkbox]{
-    box-shadow:rgba(0, 0, 0, 0.55)1px 1px 1px 1px inset;    
+
+input[type=checkbox] {
+    -webkit-box-shadow: inset 1px 1px 1px 1px rgba(54,48,54,1);
+    -moz-box-shadow: inset 1px 1px 1px 1px rgba(54,48,54,1);
+    box-shadow: inset 1px 1px 1px 1px rgba(54,48,54,1);
 }

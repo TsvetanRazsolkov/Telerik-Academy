@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <title>Windows Calculator</title>
+    <link href="WindowsCalculator.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <img src="images//calculator.png" alt="calculator" id="calc-icon"/>
+            <h1>Calculator</h1>
+            <img src="images//window-controls.png" alt="Window controls" id="win-icons" />
+        </div>
+        <div id="calculator">
+            <div id="navigation">
+                <ul>
+                    <li class="nav-item">View</li>
+                    <li class="nav-item">Edit</li>
+                    <li class="nav-item">Help</li>
+                </ul>
+            </div>
+            <div id="calc-main">
+                <table id="display">
+                    <tr>
+                        <td>8854455</td>
+                    </tr>
+                </table>
+                <table id="binary">
+                    <tr>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">63</td>
+                        <td colspan="3">47</td>
+                        <td class="right-aligned">32</td>
+                    </tr>
+                    <tr>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>1000</td>
+                        <td>0111</td>
+                        <td>0001</td>
+                        <td>1011</td>
+                        <td>1011</td>
+                        <td>0111</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">31</td>
+                        <td colspan="3">15</td>
+                        <td class="right-aligned">0</td>
+                    </tr>
+                </table>
+                <table id="controls">
+                    <tr>
+                        <td rowspan="3" class="radio-boxes">
+                            <span class="radio">
+                                <input type="radio" name="num-system" id="hex" />
+                                <label for="hex">Hex</label>
+                            </span>  <br />
+                            <span class="radio">
+                                <input type="radio" name="num-system" id="dec" checked="checked" />
+                                <label for="dec">Dec</label>
+                            </span> <br />
+                            <span class="radio">
+                                <input type="radio" name="num-system" id="oct" />
+                                <label for="oct">Dec</label>
+                            </span> <br />
+                            <span class="radio">
+                                <input type="radio" name="num-system" id="bin" />
+                                <label for="bin">Dec</label>
+                            </span> <br />
+                        </td>
+                        <td> <button disabled="disabled"></button> </td>
+                        <td> <button class="gradient">Mod</button> </td>
+                        <td> <button disabled="disabled" class="letters">A</button> </td>
+                        <td> <button>MC</button> </td>
+                        <td> <button>MR</button> </td>
+                        <td> <button>MS</button> </td>
+                        <td> <button>M+</button> </td>
+                        <td> <button>M-</button> </td>
+                    </tr>
+                    <tr>
+                        <td> <button class="gradient">(</button> </td>
+                        <td> <button class="gradient">)</button> </td>
+                        <td> <button disabled="disabled" class="letters">B</button> </td>
+                        <td> <button class="gradient" id="back-space">&#8592;</button> </td>
+                        <td> <button class="gradient">CE</button> </td>
+                        <td> <button class="gradient">C</button> </td>
+                        <td> <button class="gradient operator">&#177;</button> </td>
+                        <td> <button disabled="disabled">&radic;</button> </td>
+                    </tr>
+                    <tr>
+                        <td> <button class="gradient">RoL</button> </td>
+                        <td> <button class="gradient">RoR</button> </td>
+                        <td> <button disabled="disabled" class="letters">C</button> </td>
+                        <td> <button class="numbers">7</button> </td>
+                        <td> <button class="numbers">8</button> </td>
+                        <td> <button class="numbers">9</button> </td>
+                        <td> <button class="gradient operator">/</button> </td>
+                        <td> <button disabled="disabled" >%</button> </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3" class="radio-boxes">
+                            <span class="radio">
+                                <input type="radio" name="bit-word" id="qword" checked="checked" />
+                                <label for="qword">Qword</label>
+                            </span>  <br />
+                            <span class="radio">
+                                <input type="radio" name="bit-word" id="dword" />
+                                <label for="dword">Dword</label>
+                            </span> <br />
+                            <span class="radio">
+                                <input type="radio" name="bit-word" id="word" />
+                                <label for="word">Word</label>
+                            </span> <br />
+                            <span class="radio">
+                                <input type="radio" name="bit-word" id="byte" />
+                                <label for="byte">Byte</label>
+                            </span> <br />
+                        </td>
+                        <td> <button class="gradient">Or</button> </td>
+                        <td> <button class="gradient">Xor</button> </td>
+                        <td> <button disabled="disabled" class="letters">D</button> </td>
+                        <td> <button class="numbers">4</button> </td>
+                        <td> <button class="numbers">5</button> </td>
+                        <td> <button class="numbers">6</button> </td>
+                        <td> <button class="gradient operator">*</button> </td>
+                        <td> <button disabled="disabled">1/x</button> </td>
+                    </tr>
+                    <tr>
+                        <td> <button class="gradient">Lsh</button> </td>
+                        <td> <button class="gradient">Rsh</button> </td>
+                        <td> <button disabled="disabled" class="letters">E</button> </td>
+                        <td> <button class="numbers">1</button> </td>
+                        <td> <button class="numbers">2</button> </td>
+                        <td> <button class="numbers">3</button> </td>
+                        <td> <button class="gradient operator">-</button> </td>
+                        <td rowspan="2"> <button id="equals-button" class="gradient">=</button> </td>
+                    </tr>
+                    <tr>
+                        <td> <button class="gradient">Not</button> </td>
+                        <td> <button class="gradient">And</button> </td>
+                        <td> <button disabled="disabled" class="letters">F</button> </td>
+                        <td colspan="2"> <button class="numbers">0</button> </td>
+                        <td> <button disabled="disabled">.</button> </td>
+                        <td> <button class="gradient operator">+</button> </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
