@@ -1,0 +1,102 @@
+﻿body, div, header, nav, ul, li, section, article, h2, a, img {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 20px;
+    font-family: Calibri;
+    font-size: 12px;
+}
+
+#wrapper {
+    width:600px;
+    background-color: #1e3741;
+    border-radius: 5px;
+    padding: 10px 10px 0 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: #a1adb2;
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+/*Navigation*/
+
+.nav-item {
+    height: 30px;
+    background-color: #4b5f67;
+    display: inline-block;
+    margin-right: -2px;
+}
+
+    .nav-item > a {
+        display: inline-block;
+        padding: 8px 15px 8px 15px;
+    }
+
+    .nav-item:last-of-type {
+        margin-left: 1px;
+    }
+
+.active {
+    padding-left: 0;
+    background-color: #1e3741;
+}
+
+    .active > a {
+        color: white;
+        padding-left: 10px;
+    }
+
+#underlined {
+    text-decoration: underline;
+}
+
+/*Main section*/
+
+article {
+    width: 240px;
+}
+
+    article h2 {
+        font-size: 1.15em;
+    }
+
+    article a {
+        display: inline-block;
+        line-height: 14px;
+        padding: 10px 12px 10px 10px;
+        border-bottom: 1px solid #4b5f67;
+    }
+
+#active-article {
+    position: relative;
+    margin-top: 13px;
+    background-color: #00968c;
+}
+
+    #active-article a {
+        border: none;
+        color: white;
+    }
+
+.article-content {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 238px;
+}
+
+#last a {
+    border: none;
+    padding-bottom: 8px;
+}

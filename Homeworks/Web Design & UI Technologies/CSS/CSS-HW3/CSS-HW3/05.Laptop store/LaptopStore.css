@@ -1,0 +1,211 @@
+﻿body, header, nav, ul, li, section, fieldset, img, aside {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Corbel, Arial;
+    font-size: 23px;
+    padding: 20px;
+}
+
+#wrapper {
+    width: 820px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 15px;
+    padding-right: 0;
+    padding-top: 0;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+    .clearfix:after {
+        content: "";
+        display: block;
+        clear: both;
+        height: 0;
+    }
+
+/*Header with navigation*/
+
+header {
+    padding: 10px;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 2px solid black;
+    margin-left: 15px;
+    margin-right: 30px;
+    margin-bottom: 15px;
+}
+
+    header > nav > ul {
+        list-style-type: none;
+    }
+
+.nav-item {
+    display: inline-block;
+}
+
+    .nav-item a {
+        color: #00acef;
+    }
+
+/*Main section*/
+
+#main {
+    width: 520px;
+    float: left;
+    border: 2px solid black;
+    padding: 15px 10px 5px 8px;
+    margin-right: 17px;
+}
+
+.item {
+    width: 245px;
+    border: 2px solid black;
+    padding-left: 5px;
+    padding-right: 1px;
+    padding-top: 10px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+    .item > h2 {
+        display: inline;
+        background-color: white;
+        font-size: 23px;
+        font-weight: normal;
+        position: absolute;
+        top: -35px;
+        left: 25px;
+        padding-left: 5px;
+        padding-right: 15px;
+    }
+
+    .item img {
+        float: left;
+    }
+
+.left {
+    float: left;
+    margin-right: 8px;
+}
+
+.right {
+    display: inline-block;
+}
+
+.specs {
+    margin-top: 20px;
+    margin-bottom: -10px;
+    margin-left: 0;
+    text-align: left;
+}
+
+.inline-specs {
+    display: inline-block;
+    margin-left: 12px;
+    margin-bottom: 5px;
+}
+
+aside {
+    font-size: 1.2em;
+    padding: 40px 0 50px 0;
+}
+
+    aside > p {
+        line-height: 20px;
+        margin-bottom: 15px;
+        padding-right: 0;
+    }
+
+/*Slider styling - https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/ */
+
+input[type=range] {
+    -webkit-appearance: none;
+    margin-left: 10px;
+    padding-bottom:0;
+    padding-top:0;
+    width: 215px;
+}
+
+    input[type=range]:focus {
+        outline: none;
+    }
+
+    input[type=range]::-webkit-slider-runnable-track {
+        width: 215px;
+        height: 4px;
+        cursor: pointer;
+        box-shadow: 3px 3px 0 0 rgba(128, 128, 128, 0.44) inset;
+        background: white;
+    }
+
+    input[type=range]::-webkit-slider-thumb {
+        width:16px;
+        height:26px;
+        background: url(slider-thumb.png);
+        margin-top:-10px;
+        cursor: pointer;
+        -webkit-appearance: none;
+    }
+
+    input[type=range]:focus::-webkit-slider-runnable-track {
+        background: white;
+    }
+
+    input[type=range]::-moz-range-track {
+        width: 215px;
+        height: 4px;
+        cursor: pointer;
+        box-shadow: 3px 3px 0 0 rgba(128, 128, 128, 0.44) inset;
+        background: white;
+    }
+
+    input[type=range]::-moz-range-thumb {
+        width:16px;
+        height:26px;
+        background: url(slider-thumb.png);
+        border:none;
+        cursor: pointer;
+    }
+
+    input[type=range]::-ms-track {
+        width: 215px;
+        height: 4px;
+        cursor: pointer;
+        background: transparent;
+        border-width:16px;
+        border-color:transparent;
+        color: transparent;
+    }
+
+    input[type=range]::-ms-fill-lower {
+        background: white;
+        box-shadow: 3px 3px 0 0 rgba(128, 128, 128, 0.44) inset;
+    }
+
+    input[type=range]::-ms-fill-upper {
+        background: white;
+        box-shadow: 3px 3px 0 0 rgba(128, 128, 128, 0.44) inset;
+    }
+
+    input[type=range]::-ms-thumb {
+        width:16px;
+        height:26px;
+        background: url(slider-thumb.png);
+        border:none;
+        cursor: pointer;
+    }
+
+    input[type=range]:focus::-ms-fill-lower {
+        background: white;
+    }
+
+    input[type=range]:focus::-ms-fill-upper {
+        background: white;
+    }
