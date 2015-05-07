@@ -1,0 +1,32 @@
+body,
+div,
+img {
+  padding: 0;
+  margin: 0;
+}
+body {
+  padding: 30px;
+}
+#wrapper {
+  position: relative;
+}
+.small {
+  display: inline-block;
+}
+.small a:focus .hidden {
+  display: block;
+  position: absolute;
+  top: 160px;
+  left: 0;
+}
+.small a > img {
+  width: 130px;
+  height: 130px;
+}
+.hidden {
+  display: none;
+}
+.hidden img {
+  width: 400px;
+  height: 400px;
+}
