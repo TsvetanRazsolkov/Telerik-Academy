@@ -17,13 +17,14 @@ console.log('07. Is prime?');
 console.log(innerSeparator);
 
 function isNumberPrime(num) {
-	var isPrime = true;
+    var isPrime = true,
+        maxDivider = Math.sqrt(num),
+        divider = 2;
+
 	if (num < 2) {
 		isPrime = false;
 	}
 
-	var maxDivider = Math.sqrt(num);
-	var divider = 2;
 	while (divider <= maxDivider && isPrime) {
 		if (num % divider === 0) {
 			isPrime = false;

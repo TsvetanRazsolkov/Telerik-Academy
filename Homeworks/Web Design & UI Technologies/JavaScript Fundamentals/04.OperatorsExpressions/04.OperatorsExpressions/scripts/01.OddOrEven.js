@@ -7,8 +7,8 @@ n	Odd?
 -1	true
 0	false     */
 
-innerSeparator = '-----------------------'; // global variable for all scripts
-mainSeparator = '========================================================='; // global variable for all scripts
+innerSeparator = '-----------------------'; // global variable for all scripts - wrong, but useful ;)
+mainSeparator = '========================================================='; // global variable for all scripts - wrong, but useful ;)
 
 console.log(mainSeparator);
 console.log('01. Odd or even ');
