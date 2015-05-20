@@ -52,8 +52,9 @@ function solveEquation(input) {
 }
 
 while (input !== 'spri be') {
-    input = prompt('Task 6: Enter coefficients a, b, c separated by a SPACE: / Or "spri be" to stop prompting / Or click Cancel');
+    input = prompt('Task 6: Quadratic euation - Enter coefficients a, b, c separated by a SPACE: / Or "spri be" to stop prompting / Or click Cancel');
     if (input === null) {
+        console.log('Reload page to start scripts again.');
         break;
     }
     solveEquation(input);

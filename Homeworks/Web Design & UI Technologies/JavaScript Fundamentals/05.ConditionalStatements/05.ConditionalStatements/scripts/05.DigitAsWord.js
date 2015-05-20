@@ -58,8 +58,9 @@ function printDigitAsWord(input) {
 }
 
 while (input !== 'stop') {
-    input = prompt('Task 5 - Enter a digit: / Enter "stop" to stop prompting / Or click Cancel :)', '');
+    input = prompt('Task 5: Digit as word - Enter a digit: / Enter "stop" to stop prompting / Or click Cancel :)', '');
     if (input === null) {
+        console.log('Reload page to start the scripts again.');
         break;
     }
     printDigitAsWord(input);    
