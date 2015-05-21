@@ -1,28 +1,26 @@
 ﻿// numbers
-var integer = 1;
-var float = 1.5;
-var notANumber = NaN;
-var aLot = Infinity;
-
+var integer = 1,
+ float = 1.5,
+ notANumber = NaN,
+ aLot = Infinity,
 // boolean
-var boolFalse = false;
-var boolTrue = true;
-
+ boolFalse = false,
+ boolTrue = true,
 // strings
-var emptyString = '';
-var quotedString = '"How you doin\'?", Joey said.'; // task 2;
-
+ emptyString = '',
+ quotedString = '"How you doin\'?", Joey said.', // task 2;
 // null
-var nullVar = null;
-
+ nullVar = null,
 // undefined
-var undefinedVar = undefined;
-
+ undefinedVar = undefined,
 // object
-var notEmptyObject = {
-    objName: 'some name',
-    objValue: 'useless'
-}
+ notEmptyObject = {
+     objName: 'some name',
+     objValue: 'useless'
+ },
+//array
+array = [integer, float, notANumber, aLot, boolFalse, boolTrue, emptyString,
+             quotedString, nullVar, undefinedVar, notEmptyObject];
 
 // function
 function getType(obj) {
@@ -34,12 +32,8 @@ function getType(obj) {
     }
 }
 
-//array
-var array = [integer, float, notANumber, aLot, boolFalse, boolTrue, emptyString,
-             quotedString, nullVar, undefinedVar, notEmptyObject];
-
 for (var i = 0, len = array.length; i < len; i += 1) {
-    getType(array[i])
+    getType(array[i]);
 }
 
 console.log('type of array --> ' + typeof array);

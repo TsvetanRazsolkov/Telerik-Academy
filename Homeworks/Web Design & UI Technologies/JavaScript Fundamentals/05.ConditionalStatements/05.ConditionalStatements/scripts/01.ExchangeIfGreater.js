@@ -6,9 +6,9 @@ a    b    result
 3    4    3 4
 5.5  4.5  4.5 5.5   */
 
-mainSeparator = '============================================'; // global variable - wrong, but useful ;)
-innerSeparator = '---------------------------------'; // global variable - wrong, but useful ;)
-
+var mainSeparator = '============================================';
+	innerSeparator = '---------------------------------';
+	
 console.log(mainSeparator);
 console.log('01.Exchange if greater');
 console.log(innerSeparator);
