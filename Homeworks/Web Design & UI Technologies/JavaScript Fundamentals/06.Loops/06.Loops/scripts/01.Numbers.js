@@ -2,13 +2,20 @@
 
 var mainSeparator = '=========================================',
     innerSeparator = '------------------------',
-    n = prompt('Task 1: Numbers from 1 to N - Enter a number N= :', 5),
+    n = prompt('Task 1: Numbers from 1 to N - Enter a number N= :', 5) | 0,
     i;
 
 console.log(mainSeparator);
 console.log('01. Numbers');
 console.log(innerSeparator);
 
-for ( i = 1; i <= n; i+=1) {
-    console.log(i);
+if (n > 0) {
+    for (i = 1; i <= n; i += 1) {
+        console.log(i);
+    }
+}
+else {
+    for (i = n; i <= 1; i += 1) {
+        console.log(i);
+    }
 }

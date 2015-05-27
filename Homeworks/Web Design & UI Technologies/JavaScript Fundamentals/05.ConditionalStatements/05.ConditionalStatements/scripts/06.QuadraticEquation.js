@@ -31,9 +31,9 @@ function solveEquation(input) {
         x2;
 
     coefficients = parseCoefficients(input);
-    a = coefficients[0];
-    b = coefficients[1];
-    c = coefficients[2];
+    a = coefficients[0] * 1;
+    b = coefficients[1] * 1;
+    c = coefficients[2] * 1;
 
     discriminant = Math.pow(b, 2) - 4 * a * c;
 
