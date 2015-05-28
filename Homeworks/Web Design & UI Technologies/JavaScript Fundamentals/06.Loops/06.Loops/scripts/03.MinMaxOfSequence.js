@@ -5,8 +5,8 @@ console.log('03. Min/Max of sequence');
 console.log(innerSeparator);
 
 var numbers = [1, 2, 3, 4, 5, 7.5, -0.12],
-    max = Number.MIN_SAFE_INTEGER,
-    min = Number.MAX_SAFE_INTEGER,
+    max = numbers[0],
+    min = numbers[0],
     i,
     len = numbers.length;
 
