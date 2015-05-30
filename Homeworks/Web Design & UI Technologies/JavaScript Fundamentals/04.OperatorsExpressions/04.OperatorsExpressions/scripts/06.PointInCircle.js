@@ -13,9 +13,9 @@ x	    y	    inside
 0.9	    -1.93	true
 1	    1.655	true        */
 
-console.log(mainSeparator);
+console.log('=========================================================');
 console.log('06. Point in circle');
-console.log(innerSeparator);
+console.log('-----------------------');
 
 var circleCenterX = 0,
     circleCenterY = 0,

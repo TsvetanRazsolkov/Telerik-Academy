@@ -9,9 +9,9 @@ a	    b	    c	    biggest
 0	    -2.5	5	    5
 -0.1	-0.5	-1.1	-0.1    */
 
-console.log(mainSeparator);
+console.log('============================================');
 console.log('03.The biggest of three');
-console.log(innerSeparator);
+console.log('---------------------------------');
 
 function printBiggest(a, b, c) {
     if (a > b) {

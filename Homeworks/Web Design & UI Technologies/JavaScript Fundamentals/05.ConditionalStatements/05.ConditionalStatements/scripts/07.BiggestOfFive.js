@@ -9,9 +9,9 @@ a	b	    c	    d	e	    biggest
 0	-2.5	0	    5	5	    5
 -3	-0.5	-1.1	-2	-0.1	-0.1   */
 
-console.log(mainSeparator);
+console.log('============================================');
 console.log('07.The biggest of five numbers');
-console.log(innerSeparator);
+console.log('---------------------------------');
 
 function printGreatestOfFive(a, b, c, d, e) {
     var printInput = 'a= ' + a + ', b= ' + b + ', c= ' + c + ', d= ' + d + ', e= ' + e + ' --> biggest= ';

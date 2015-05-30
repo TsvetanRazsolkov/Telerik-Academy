@@ -12,9 +12,9 @@ n	Prime?
 -3	false
 0	false       */
 
-console.log(mainSeparator);
+console.log('=========================================================');
 console.log('07. Is prime?');
-console.log(innerSeparator);
+console.log('-----------------------');
 
 function isNumberPrime(num) {
     var isPrime = true,

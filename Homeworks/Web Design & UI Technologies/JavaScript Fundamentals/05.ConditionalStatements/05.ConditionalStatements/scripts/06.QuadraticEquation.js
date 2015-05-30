@@ -10,9 +10,9 @@ a	    b	c	 roots
 -0.5	4	-8	 x1=x2=4
 5	    2	8	 no real roots    */
 
-console.log(mainSeparator);
+console.log('============================================');
 console.log('06.Quadratic equation');
-console.log(innerSeparator);
+console.log('---------------------------------');
 
 var input,
     coefficients,

@@ -16,9 +16,9 @@ numbers	number as words
 711	    Seven hundred and eleven
 999	    Nine hundred and ninety nine   */
 
-console.log(mainSeparator);
+console.log('============================================');
 console.log('08.Number as words');
-console.log(innerSeparator);
+console.log('---------------------------------');
 
 function getDigit(digit) {
     switch (digit) {

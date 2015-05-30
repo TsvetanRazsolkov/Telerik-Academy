@@ -1,9 +1,9 @@
 ﻿//Write a script that finds the index of given element in a sorted array of integers
 //by using the binary search algorithm.
 
-console.log(mainSeparator);
+console.log('=====================================');
 console.log('07. Binary search');
-console.log(innerSeparator);
+console.log('-------------------------');
 
 var arr = [1, 2, 3, 4, 5, 6, 8, 9, 11, 14, 15],
     srchValRec = 3,

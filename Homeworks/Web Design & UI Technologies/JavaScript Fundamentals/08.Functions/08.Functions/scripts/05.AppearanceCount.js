@@ -1,9 +1,9 @@
 ﻿// Write a function that counts how many times given number appears in given array.
 // Write a test function to check if the function is working correctly.
 
-console.log(mainSeparator);
+console.log('===============================');
 console.log('05. Appearance count');
-console.log(innerSeparator);
+console.log('--------------------');
 
 function countAppearances(arr, num) {
     var i,

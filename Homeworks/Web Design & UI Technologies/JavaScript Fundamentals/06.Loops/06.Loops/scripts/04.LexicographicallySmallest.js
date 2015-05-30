@@ -1,8 +1,8 @@
 ﻿// Write a script that finds the lexicographically smallest and largest property in document, window and navigator objects.
 
-console.log(mainSeparator);
+console.log('=========================================');
 console.log('04. Lexicographically smallest and largest property in document, window and navigator objects');
-console.log(innerSeparator);
+console.log('------------------------');
 
 var largest,
     smallest,

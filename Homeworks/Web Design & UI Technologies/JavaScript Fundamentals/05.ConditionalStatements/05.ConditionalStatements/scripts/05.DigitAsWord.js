@@ -12,9 +12,9 @@ hi	    not a digit
 9	    nine
 10	    not a digit  */
 
-console.log(mainSeparator);
+console.log('============================================');
 console.log('05.Digit as word');
-console.log(innerSeparator);
+console.log('---------------------------------');
 
 var input;
 

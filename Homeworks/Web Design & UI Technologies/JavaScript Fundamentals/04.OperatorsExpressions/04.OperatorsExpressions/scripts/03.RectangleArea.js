@@ -5,9 +5,9 @@ width	height	area
 2.5	    3	    7.5
 5	    5	    25     */
 
-console.log(mainSeparator);
+console.log('=========================================================');
 console.log('03. Rectangle area');
-console.log(innerSeparator);
+console.log('-----------------------');
 
 function calculateRectArea(width, height) {
 	var area = width * height;

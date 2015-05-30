@@ -7,12 +7,9 @@ n	Odd?
 -1	true
 0	false     */
 
-var innerSeparator = '-----------------------';
-	mainSeparator = '=========================================================';
-
-console.log(mainSeparator);
+console.log('=========================================================');
 console.log('01. Odd or even ');
-console.log(innerSeparator);
+console.log('-----------------------');
 
 function checkIfOdd(num) {
 	if (num % 2 !== 0) {

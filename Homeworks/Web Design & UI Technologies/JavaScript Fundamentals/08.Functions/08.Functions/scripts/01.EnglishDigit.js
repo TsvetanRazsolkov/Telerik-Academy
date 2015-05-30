@@ -6,12 +6,9 @@ input	output
 1024	four
 12309	nine   */
 
-var mainSeparator = '===============================',
-    innerSeparator = '--------------------';
-
-console.log(mainSeparator);
+console.log('===============================');
 console.log('01. English digit');
-console.log(innerSeparator);
+console.log('--------------------');
 
 function extractLastDigit(num) {
     var digit = num % 10;

@@ -13,9 +13,9 @@ n	    binary representation	bit #3
 62241	11110011 00100001	    0                           */
 
 
-console.log(mainSeparator);
+console.log('=========================================================');
 console.log('05. Third bit');
-console.log(innerSeparator);
+console.log('-----------------------');
 
 function binaryRepresentation(num) {
     var binNum = num.toString(2);

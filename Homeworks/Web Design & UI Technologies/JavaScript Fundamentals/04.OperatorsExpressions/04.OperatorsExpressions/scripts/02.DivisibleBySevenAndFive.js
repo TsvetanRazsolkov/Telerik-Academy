@@ -9,9 +9,9 @@ n	Divided by 7 and 5?
 35	true
 140	true      */
 
-console.log(mainSeparator);
+console.log('=========================================================');
 console.log('02. Divisible by 7 and 5');
-console.log(innerSeparator);
+console.log('-----------------------');
 
 function isDivisible(num) {
 	if (num % 7 === 0 && num % 5 === 0) {

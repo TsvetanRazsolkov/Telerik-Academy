@@ -1,8 +1,8 @@
 ﻿// Write a script that compares two char arrays lexicographically (letter by letter).
 
-console.log(mainSeparator);
+console.log('=====================================');
 console.log('02.Lexicographically comparison');
-console.log(innerSeparator);
+console.log('-------------------------');
 
 var i,
     shorterLength,
@@ -40,8 +40,8 @@ function compareArrays(firstArr, secondArr) {
 }
 
 console.log(compareArrays(['a', 'b', 'c'], ['a', 'b', 'c']));
-console.log(innerSeparator);
+console.log('-------------------------');
 console.log(compareArrays(['u', 'f', 'h'], ['u', 'f', 'h', 'c']));
-console.log(innerSeparator);
+console.log('-------------------------');
 console.log(compareArrays(['b', 'l', 'a'], ['a', 'l', 'b']));
 

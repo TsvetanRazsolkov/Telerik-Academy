@@ -4,9 +4,9 @@ Use the selection sort algorithm: Find the smallest element, move it at the firs
 find the smallest from the rest, move it at the second position, etc.
 Hint: Use a second array  */
 
-console.log(mainSeparator);
+console.log('=====================================');
 console.log('05.Selection sort');
-console.log(innerSeparator);
+console.log('-------------------------');
 
 var array = [2, 11, 1, 23, 3, 8, 12, 4, 4, 5],
     sortedArray = [],

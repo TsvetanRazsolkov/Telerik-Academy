@@ -6,9 +6,9 @@ x	    y	    inside K & outside of R
 2.5	    2	    yes
 -100	-100	no       */
 
-console.log(mainSeparator);
+console.log('=========================================================');
 console.log('09. Point in circle and outside a rectangle');
-console.log(innerSeparator);
+console.log('-----------------------');
 
 var xCircleCenter = 1,
     yCircleCenter = 1,

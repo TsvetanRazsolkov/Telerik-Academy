@@ -13,9 +13,9 @@ a	    b	    c	    result
 10	    20	    30	    30 20 10
 1	    1	    1	    1 1 1          */
 
-console.log(mainSeparator);
+console.log('============================================');
 console.log('04.Sort three numbers');
-console.log(innerSeparator);
+console.log('---------------------------------');
 
 function printSortedThreeNumbers(a, b, c) {
     if (a > b) {

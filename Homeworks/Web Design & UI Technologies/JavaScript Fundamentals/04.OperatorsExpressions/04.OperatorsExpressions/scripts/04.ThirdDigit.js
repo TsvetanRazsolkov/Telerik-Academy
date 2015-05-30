@@ -11,9 +11,9 @@ n	    Third digit 7?
 777877	false
 9999799	true         */
 
-console.log(mainSeparator);
+console.log('=========================================================');
 console.log('04. Third digit');
-console.log(innerSeparator);
+console.log('-----------------------');
 
 function checkThirdDigit(num) {
     var isSeven = Math.floor((num / 100) % 10) === 7;

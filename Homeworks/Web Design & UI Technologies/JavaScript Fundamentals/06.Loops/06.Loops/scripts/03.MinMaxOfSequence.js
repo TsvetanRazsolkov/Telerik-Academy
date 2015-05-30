@@ -1,8 +1,8 @@
 ﻿// Write a script that finds the max and min number from a sequence of numbers.
 
-console.log(mainSeparator);
+console.log('=========================================');
 console.log('03. Min/Max of sequence');
-console.log(innerSeparator);
+console.log('------------------------');
 
 var numbers = [1, 2, 3, 4, 5, 7.5, -0.12],
     max = numbers[0],

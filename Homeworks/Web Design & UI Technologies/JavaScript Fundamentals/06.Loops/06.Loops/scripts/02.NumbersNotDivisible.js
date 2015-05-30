@@ -1,8 +1,8 @@
 ﻿// Write a script that prints all the numbers from 1 to N, that are not divisible by 3 and 7 at the same time
 
-console.log(mainSeparator);
+console.log('=========================================');
 console.log('02. Numbers not divisible by 3 and 7 at the same time');
-console.log(innerSeparator);
+console.log('------------------------');
 
 var i,
     n = prompt('Task 2: Numbers not divisible - Enter number N= :', 22) | 0;

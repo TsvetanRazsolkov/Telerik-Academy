@@ -3,9 +3,9 @@ Example:
 input	                                result
 4, 1, 1, 4, 2, 3, 4, 4, 1, 2, 4, 9, 3	4 (5 times) */
 
-console.log(mainSeparator);
+console.log('=====================================');
 console.log('06.Most frequent number');
-console.log(innerSeparator);
+console.log('-------------------------');
 
 var arr = [4, 1, 1, 4, 2, 3, 4, 4, 1, 2, 4, 9, 3],
     len = arr.length,

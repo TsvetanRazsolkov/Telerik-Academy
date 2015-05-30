@@ -9,9 +9,9 @@ a	b	    c	    result
 0	-2.5	4	    0
 -1	-0.5	-5.1	-        */
 
-console.log(mainSeparator);
+console.log('============================================');
 console.log('02.Multiplication sign');
-console.log(innerSeparator);
+console.log('---------------------------------');
 
 function showSign(a, b, c) {
     var numbers = [a, b ,c],

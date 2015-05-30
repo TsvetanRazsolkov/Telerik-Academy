@@ -7,9 +7,9 @@ a	    b	    h	    area
 100	    200	    300	    45000
 0.222	0.333	0.555	0.1540125    */
 
-console.log(mainSeparator);
+console.log('=========================================================');
 console.log('08. Trapezoid area');
-console.log(innerSeparator);
+console.log('-----------------------');
 
 function printTrapArea(a, b, h) {
     var area = ((a + b)/2) * h;

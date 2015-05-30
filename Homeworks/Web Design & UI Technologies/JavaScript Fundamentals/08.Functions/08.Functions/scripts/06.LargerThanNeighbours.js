@@ -1,9 +1,9 @@
 ﻿// Write a function that checks if the element at given position in given array of integers
 // is bigger than its two neighbours (when such exist).
 
-console.log(mainSeparator);
+console.log('===============================');
 console.log('06. Larger than neighbours');
-console.log(innerSeparator);
+console.log('--------------------');
 
 var array = [1, 3, 2, 3];
 

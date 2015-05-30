@@ -2,9 +2,9 @@
 The search can be case sensitive or case insensitive.
 Use function overloading. */
 
-console.log(mainSeparator);
+console.log('===============================');
 console.log('03. Occurrences of a word');
-console.log(innerSeparator);
+console.log('--------------------');
 
 var text = 'Bla, blablaika, Bla, ..Bla,.bla,.Bla.,?Bla,!.bla bla';
 
@@ -48,11 +48,11 @@ function findWordOccurrencesNoRegEx(text, word, caseSensitive) {
 }
 
 console.log(text);
-console.log(innerSeparator);
+console.log('--------------------');
 console.log('With regular expression:');
 console.log('Case sensitive search --> ' + findWordOccurrencesRegEx(text, 'bla', true));
 console.log('Case insensitive search --> ' + findWordOccurrencesRegEx(text, 'bla', false));
-console.log(innerSeparator);
+console.log('--------------------');
 console.log('No regular expression:');
 console.log('Case sensitive search --> ' + findWordOccurrencesNoRegEx(text, 'bla', true));
 console.log('Case insensitive search --> ' + findWordOccurrencesNoRegEx(text, 'bla', false));

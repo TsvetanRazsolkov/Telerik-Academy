@@ -3,9 +3,9 @@ Example:
     input	                    result
 2, 1, 1, 2, 3, 3, 2, 2, 2, 1	2, 2, 2  */
 
-console.log(mainSeparator);
+console.log('=====================================');
 console.log('03.Maximal sequence');
-console.log(innerSeparator);
+console.log('-------------------------');
 
 var arr = [2, 1, 1, 2, 3, 3, 2, 2, 2, 1],
     i,

@@ -1,8 +1,8 @@
 ﻿// Write a function to count the number of div elements on the web page
 
-console.log(mainSeparator);
+console.log('===============================');
 console.log('04. Number of elements');
-console.log(innerSeparator);
+console.log('--------------------');
 
 function countElements(element) {
     var elementsCount = document.getElementsByTagName(element).length;
