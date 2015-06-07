@@ -82,9 +82,7 @@ function changeTextInTags(text) {
             else {
                 currentLetter = text[i];
 
-                for (j = 0; j < cases.length; j += 1) {
-                    currentLetter = cases[j](currentLetter);
-                }
+                currentLetter = cases[cases.length - 1](currentLetter);
 
                 result += currentLetter;
             }
