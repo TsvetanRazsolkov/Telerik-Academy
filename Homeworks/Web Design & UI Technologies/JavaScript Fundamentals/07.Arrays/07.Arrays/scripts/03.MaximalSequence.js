@@ -11,9 +11,9 @@ var arr = [2, 1, 1, 2, 3, 3, 2, 2, 2, 1],
     i,
     len = arr.length,
     start = arr[0],
-    bestStartIndex,
+    bestStartIndex = 0,
     bestLength = 1,
-    currentLength,
+    currentLength = 0,
     result;
 
 for (i = 0; i < len; i += 1) {

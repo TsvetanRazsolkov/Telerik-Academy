@@ -12,8 +12,8 @@ var arr = [4, 1, 1, 4, 2, 3, 4, 4, 1, 2, 4, 9, 3],
     solutionArr = [],// the numbers from the initial array will be kept here as indices, and
                      // the values will be the number of occurences of the specific number.
     i,
-    bestFrequency = 0,
-    mostFrequentNumber;
+    bestFrequency = 1,
+    mostFrequentNumber = arr[0];
 
 for (i = 0; i < len; i+=1) {
     if (solutionArr[arr[i]] !== undefined) { // the number arr[i] has been found already;
