@@ -14,16 +14,12 @@ function validateInput(input) {
         len = input.length,
         isBotConvertibleToNumber;
 
-    if (input.length < 2) {
+    if (input.length !== 2) {
         throw Error;
     }
 
-    for (i = 0; i < len; i += 1) {
-        isNotConvertibleToNumber = isNaN(Number(input[i]));
-
-        if (isNotConvertibleToNumber) {
-            throw Error;
-        }
+	if (isNaN(input[0]) || isNaN(input[1])) {
+            throw Error;        
     }
 }
 

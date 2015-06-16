@@ -20,7 +20,7 @@ function sum(arrayOfNumbers) {
     }
     else {
         for (i = 0; i < arrayOfNumbers.length; i += 1) {
-            if (isNaN(Number(arrayOfNumbers[i]))) {
+            if (isNaN(arrayOfNumbers[i])) {
                 throw Error;
             }
             resultSum += Number(arrayOfNumbers[i]);
