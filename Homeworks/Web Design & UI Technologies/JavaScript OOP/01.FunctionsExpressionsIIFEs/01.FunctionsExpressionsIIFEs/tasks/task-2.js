@@ -6,44 +6,43 @@
 		3) it must throw an Error if any of the range params is missing
 */
 
-// To work in BGCoder Put all the auxiliary functions inside the body of findPrimes();
-
-function validateInput(input) {
-
-    var i,
-        len = input.length,
-        isBotConvertibleToNumber;
-
-    if (input.length !== 2) {
-        throw Error;
-    }
-
-	if (isNaN(input[0]) || isNaN(input[1])) {
-            throw Error;        
-    }
-}
-
-function checkIfPrime(number) {
-    var divider = 2,
-        maxDivider = Math.sqrt(number),
-        isPrime = true;
-
-    if (number < 2) {
-        isPrime = false;
-        return isPrime;
-    }
-
-    while (divider <= maxDivider && isPrime) {
-        if (number % divider === 0 || number < 2) {
-            isPrime = false;
-        }
-        divider += 1;
-    }
-
-    return isPrime;
-}
-
 function findPrimes(startOfRange, endOfRange) {
+
+	function validateInput(input) {
+
+		var i,
+			len = input.length,
+			isBotConvertibleToNumber;
+	
+		if (input.length !== 2) {
+			throw Error;
+		}
+	
+		if (isNaN(input[0]) || isNaN(input[1])) {
+				throw Error;        
+		}
+	}
+
+	function checkIfPrime(number) {
+		var divider = 2,
+			maxDivider = Math.sqrt(number),
+			isPrime = true;
+	
+		if (number < 2) {
+			isPrime = false;
+			return isPrime;
+		}
+	
+		while (divider <= maxDivider && isPrime) {
+			if (number % divider === 0 || number < 2) {
+				isPrime = false;
+			}
+			divider += 1;
+		}
+	
+		return isPrime;
+	}
+
     var primesArray = [],
         i;
 
