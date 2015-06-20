@@ -24,39 +24,32 @@ function solve() {
     var library = (function () {
         var books = [];
         var categories = [];
-        function listBooks() {
-            var booksList = [],
-                i,
-                len = books.length,
-                optionalParameter;
 
-            if (arguments.length === 0) {
-                for (i = 0; i < len; i += 1) {
-                    booksList.push(books[i]);
-                }
+        function listBooks(optionalParameter) {
+            var booksList = [];
+
+            if (optionalParameter && optionalParameter.author) {
+                booksList = books.filter(function (item) {
+                    return item.author === optionalParameter.author;
+                }).sort(function (x, y) {
+                    return x.ID - y.ID;
+                });
 
                 return booksList;
             }
-            else {
-                optionalParameter = arguments['0'];
-                if (optionalParameter.author) {
-                    for (i = 0; i < len; i += 1) {
-                        if (books[i].author === optionalParameter.author) {
-                            booksList.push(books[i]);
-                        }
-                    }
+            if (optionalParameter && optionalParameter.category) {
+                booksList = books.filter(function (item) {
+                    return item.category === optionalParameter.category;
+                }).sort(function (x, y) {
+                    return x.ID - y.ID;
+                });
 
-                    return booksList;
-                }
-                if (optionalParameter.category) {
-                    if (categories[optionalParameter.category]) {
-                        for (i = 0; i < categories[optionalParameter.category].books.length; i += 1) {
-                            booksList.push(categories[optionalParameter.category].books[i]);
-                        }
-                    }
-                    return booksList;
-                }
-            }                       
+                return booksList;
+            }
+
+            booksList = books.slice();
+
+            return booksList;
         }
 
         function validateBookOrCategoryName(name) {
@@ -87,7 +80,7 @@ function solve() {
             //Check if ISBN is unique
             if (books.some(function (item) {
                     return item.isbn === isbn;
-                })) {
+            })) {
                 throw new Error('Not unique ISBN');
             }
         }
@@ -114,36 +107,42 @@ function solve() {
         }
 
         function addCategory(newCategory) {
-            categories[newCategory] = {
+            categories.push({
+                name: newCategory,
                 books: [],
                 ID: categories.length + 1
-            };
+            });
         }
 
         function addBook(book) {
+            var categoryIndex;
 
             validateBook(book);
-
-            if (categories.indexOf(book.category) === -1) {
-                addCategory(book.category);
-            }
-
             validateBookOrCategoryName(book.category);
+
+            //If category is found keep its index.
+            //If not found push new category in the categories array(index becomes categories.length - 1);
+            if (!categories.some(function (item, index) {
+                    categoryIndex = index;
+                    return item.name === book.category;
+            })) {
+                addCategory(book.category);
+                categoryIndex = categories.length - 1;
+            }
 
             book.ID = books.length + 1;
 
-            categories[book.category].books.push(book);
+            categories[categoryIndex].books.push(book);
             books.push(book);
 
             return book;
         }
 
         function listCategories() {
-            var categoriesList = [];
-
-            for (var category in categories) {
-                categoriesList.push(category);
-            }
+            var categoriesList = categories.slice()
+                                           .map(function (item) {
+                                               return item.name;
+                                           });
 
             return categoriesList;
         }
