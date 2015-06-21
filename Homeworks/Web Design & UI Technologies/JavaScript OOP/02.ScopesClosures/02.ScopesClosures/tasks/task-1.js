@@ -77,7 +77,7 @@ function solve() {
                     throw new Error('Invalid ISBN characters');
                 }
             }
-            //Check if ISBN is unique
+			
             if (books.some(function (item) {
                     return item.isbn === isbn;
             })) {
@@ -87,52 +87,41 @@ function solve() {
 
         function validateBook(book) {
 
-            // Validate book title is correct
             validateBookOrCategoryName(book.title);
 
-            // Validate book title is unique
             if (books.some(function (item) {
                     return item.title === book.title;
             })) {
                 throw new Error('Not unique book title');
             }
 
-            // Validate book author
             if (typeof book.author !== 'string' || book.author.length < 1) {
                 throw new Error('Invalid author name');
             }
 
-            // Validate ISBN number
             validateISBN(book.isbn);
         }
 
         function addCategory(newCategory) {
             categories.push({
                 name: newCategory,
-                books: [],
                 ID: categories.length + 1
             });
         }
 
         function addBook(book) {
-            var categoryIndex;
 
             validateBook(book);
             validateBookOrCategoryName(book.category);
 
-            //If category is found keep its index.
-            //If not found push new category in the categories array(index becomes categories.length - 1);
-            if (!categories.some(function (item, index) {
-                    categoryIndex = index;
-                    return item.name === book.category;
+            if (!categories.some(function (category) {
+                    return category.name === book.category;
             })) {
                 addCategory(book.category);
-                categoryIndex = categories.length - 1;
             }
 
             book.ID = books.length + 1;
 
-            categories[categoryIndex].books.push(book);
             books.push(book);
 
             return book;
