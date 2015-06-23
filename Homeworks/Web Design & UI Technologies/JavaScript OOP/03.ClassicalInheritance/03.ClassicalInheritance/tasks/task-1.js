@@ -33,7 +33,7 @@ function solve() {
             if (name.trim().length < 3 || name.trim().length > 20) {
                 throw new Error('Invalid name - must be between 3 and 20 symbols');
             }
-            if (!name.trim().split('').some(function (item) {
+            if (!name.trim().split('').every(function (item) {
                     return (item.charCodeAt(0) > 64 && item.charCodeAt(0) < 91) ||
                             (item.charCodeAt(0) > 96 && item.charCodeAt(0) < 123);
             })) {
