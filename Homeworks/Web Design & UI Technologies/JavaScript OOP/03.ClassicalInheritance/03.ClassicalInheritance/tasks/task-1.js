@@ -59,6 +59,7 @@ function solve() {
             set: function (value) {
                 validateName(value);
                 this._firstname = value.trim();
+				return this;
             }
         });
 
@@ -69,6 +70,7 @@ function solve() {
             set: function (value) {
                 validateName(value);
                 this._lastname = value.trim();
+				return this;
             }
         });
 
@@ -79,6 +81,7 @@ function solve() {
             set: function (value) {
                 validateAge(value);
                 this._age = parseInt(value);
+				return this;
             }
         });
 
@@ -92,6 +95,7 @@ function solve() {
 
                 this.firstname = fullnameAsArray[0];
                 this.lastname = fullnameAsArray[1];
+				return this;
             }
         });
 
