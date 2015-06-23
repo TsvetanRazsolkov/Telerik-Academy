@@ -29,32 +29,27 @@ function solve() {
             var booksList = [];
 
             if (optionalParameter && optionalParameter.author) {
-                booksList = books.filter(function (item) {
-                    return item.author === optionalParameter.author;
+                booksList = books.filter(function (book) {
+                    return book.author === optionalParameter.author;
                 }).sort(function (x, y) {
                     return x.ID - y.ID;
                 });
-
-                return booksList;
             }
-            if (optionalParameter && optionalParameter.category) {
-                booksList = books.filter(function (item) {
-                    return item.category === optionalParameter.category;
+            else if (optionalParameter && optionalParameter.category) {
+                booksList = books.filter(function (book) {
+                    return book.category === optionalParameter.category;
                 }).sort(function (x, y) {
                     return x.ID - y.ID;
                 });
-
-                return booksList;
             }
-
-            booksList = books.slice();
-
+			else {
+				booksList = books.slice();
+			}
+          
             return booksList;
         }
 
         function validateBookOrCategoryName(name) {
-            var i,
-                len = name.length;
             if (typeof name !== 'string') {
                 throw new Error('Name type is not string');
             }
@@ -128,6 +123,7 @@ function solve() {
         }
 
         function listCategories() {
+			// No need to sort by ID, every category in categories[] is added with an ID bigger than the previous;
             var categoriesList = categories.slice()
                                            .map(function (item) {
                                                return item.name;
