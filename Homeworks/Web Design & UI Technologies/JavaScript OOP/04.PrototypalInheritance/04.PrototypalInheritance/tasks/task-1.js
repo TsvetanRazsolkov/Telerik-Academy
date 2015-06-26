@@ -100,84 +100,92 @@ function solve() {
 
         var domElement = {
             init: function (type) {
-                this.type = type;
-                this.attributes = [];
-                this.children = [];
+                var self = this;
 
-                return this;
+                self.type = type;
+                self.attributes = [];
+                self.children = [];
+
+                return self;
             },
             appendChild: function (child) {
-                child.parent = this;
-                validateChild(child);
-                this.children.push(child);
+                var self = this;
 
-                return this;
+                child.parent = self;
+                validateChild(child);
+                self.children.push(child);
+
+                return self;
             },
             addAttribute: function (name, value) {
+                var self = this;
 
                 validateTypeOrAttributeName(name, false);
 
-                if (attributeExists(name, this.attributes)) {
-                    this.attributes[indexOfExistingAttribute].value = value;
+                if (attributeExists(name, self.attributes)) {
+                    self.attributes[indexOfExistingAttribute].value = value;
                 }
                 else {
-                    this.attributes.push({ name: name, value: value });
+                    self.attributes.push({ name: name, value: value });
                 }
 
-                return this;
+                return self;
             },
             removeAttribute: function (attributeToDeleteName) {
-                if (attributeExists(attributeToDeleteName, this.attributes)) {
-                    this.attributes.splice(indexOfExistingAttribute, 1);
+                var self = this;
+
+                if (attributeExists(attributeToDeleteName, self.attributes)) {
+                    self.attributes.splice(indexOfExistingAttribute, 1);
                 }
-                
-                 else {
-                    throw new Error('No such attribute to remove'); // Or don't throw an error - see if there are tests;
-                 }
-                return this;
+                else {
+                    throw new Error('No such attribute to remove');
+                }
+
+                return self;
             },
             get innerHTML() {
                 var result = '',
                 i,
-                len;
+                len,
+                self = this;
 
-                if (typeof this === 'string') {
-                    result += this;
+                if (typeof self === 'string') {
+                    result += self;
                 }
-                else if (domElement.isPrototypeOf(this)) {
-                    result += ('<' + this.type);
+                else if (domElement.isPrototypeOf(self)) {
+                    result += ('<' + self.type);
 
-                    if (this.attributes.length) {
-                        len = this.attributes.length;
+                    if (self.attributes.length) {
+                        len = self.attributes.length;
 
-                        this.attributes.sort(function (x, y) {
+                        self.attributes.sort(function (x, y) {
                             return x.name < y.name ? -1 : 1;
                         });
 
                         for (i = 0; i < len; i += 1) {
-                            result += (' ' + this.attributes[i].name + '="' + this.attributes[i].value + '"');
+                            result += (' ' + self.attributes[i].name + '="' + self.attributes[i].value + '"');
                         }
                     }
                     result += '>';
 
-                    if (this.children.length) {
-                        len = this.children.length;
+                    if (self.children.length) {
+                        len = self.children.length;
 
                         for (i = 0; i < len; i += 1) {
-                            if (typeof this.children[i] === 'string') {
-                                result += this.children[i];
+                            if (typeof self.children[i] === 'string') {
+                                result += self.children[i];
                             }
                             else {
-                                result += this.children[i].innerHTML;
+                                result += self.children[i].innerHTML;
                             }
                         }
                     }
                     else {
-                        if (this.content) {
-                            result += this.content;
+                        if (self.content) {
+                            result += self.content;
                         }
                     }
-                    result += ('</' + this.type + '>');
+                    result += ('</' + self.type + '>');
                 }
 
                 return result;
