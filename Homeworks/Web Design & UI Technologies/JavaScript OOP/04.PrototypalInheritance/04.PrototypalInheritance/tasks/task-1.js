@@ -126,15 +126,15 @@ function solve() {
 
                 return this;
             },
-            removeAttribute: function (attributeToDelete) {
-                if (attributeExists(attributeToDelete.name, this.attributes)) {
+            removeAttribute: function (attributeToDeleteName) {
+                if (attributeExists(attributeToDeleteName, this.attributes)) {
                     this.attributes.splice(indexOfExistingAttribute, 1);
                 }
-                /*
+                
                  else {
                     throw new Error('No such attribute to remove'); // Or don't throw an error - see if there are tests;
                  }
-                 */
+                return this;
             },
             get innerHTML() {
                 var result = '',
