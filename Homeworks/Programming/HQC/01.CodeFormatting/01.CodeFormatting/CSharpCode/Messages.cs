@@ -4,7 +4,7 @@
 
     public static class Messages
     {
-        public static StringBuilder Output { get; set; }
+        public static StringBuilder Output { get; private set; }
 
         public static void EventAdded()
         {
