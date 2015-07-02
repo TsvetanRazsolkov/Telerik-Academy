@@ -45,6 +45,8 @@
 */
 
 function solve() {
+    var maxValueOfStudentID;
+
     function validateTitle(title) {
         if (typeof title !== 'string' || title.trim() === '' || /^\s|\s{2,}|\s$/.test(title)) {
             throw {
@@ -107,10 +109,17 @@ function solve() {
         }
 
         for (i = 0; i < len; i += 1) {
-            // Check if studentID is a number:
+            // Check if studentID is convertible to number:
             checkIfIdIsNumber(resultsCollection[i].StudentID);
+            // Check if studentID is listed in the course:
+            if (!checkIfIdIsValid(resultsCollection[i].StudentID, maxValueOfStudentID)) {
+                throw {
+                    name: 'Type Error',
+                    message: 'Student ID is not listed for this course'
+                };
+            }            
             // Check if score is a number:
-            if (resultsCollection[i].Score !== resultsCollection[i].Score * 1) {
+            if (resultsCollection[i].score !== resultsCollection[i].score * 1) {
                 throw {
                     name: 'Type Error',
                     message: 'Score is not a number'
@@ -155,6 +164,7 @@ function solve() {
                 id: studentId
             };
             this.students.push(studentToAdd);
+            maxValueOfStudentID = this.students.length;
 
             return studentId;
         },
