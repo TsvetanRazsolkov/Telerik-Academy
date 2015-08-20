@@ -2,10 +2,13 @@
 {
     using System;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
+    using System.IO;
 
     [TestClass]
     public class RotatingMatrixWalkTests
     {
+        private string expectedConsoleOutputCorrectInput7;
+        private string expectedConsoleOutputIncorrectInput;
         private int[,] matrixLength1;
         private int[,] matrixLength2;
         private int[,] matrixLength3;
@@ -13,8 +16,24 @@
         private int[,] matrixLength6;
 
         [TestInitialize]
-        public void InitializeRealAnswers()
+        public void InitializeExpectedAnswers()
         {
+            expectedConsoleOutputCorrectInput7 = "Enter a positive integer\r\n" +
+                                "  1 19 20 21 22 23 24\r\n" +
+                                " 18  2 33 34 35 36 25\r\n" +
+                                " 17 40  3 32 39 37 26\r\n" +
+                                " 16 48 41  4 31 38 27\r\n" +
+                                " 15 47 49 42  5 30 28\r\n" +
+                                " 14 46 45 44 43  6 29\r\n" +
+                                " 13 12 11 10  9  8  7\r\n";
+
+            expectedConsoleOutputIncorrectInput = "Enter a positive integer\r\n" +
+                            "You haven't entered a correct positive integer\r\n" +
+                            "Enter a positive integer\r\n" + 
+                            "You haven't entered a correct positive integer\r\n" +
+                            "Enter a positive integer\r\n" + 
+                            "  1\r\n";
+
             matrixLength1 = new int[,] { { 1 } };
 
             matrixLength2 = new int[,] {{1, 4},
@@ -35,6 +54,40 @@
                                         {13,36,32,4,25,23},
                                         {12,35,34,33,5,24},
                                         {11,10,9,8,7,6}};
+        }
+
+        [TestMethod]
+        public void ExpectRotatingWalkExampleToGiveAdequateConsoleOutput_WithCorrectInput()
+        {
+            using (StringReader input = new StringReader("7"))
+            {
+                Console.SetIn(input);
+                using (StringWriter output = new StringWriter())
+                {
+                    Console.SetOut(output);
+
+                    RotatingWalkExample.Main();
+
+                    Assert.AreEqual(expectedConsoleOutputCorrectInput7, output.ToString());
+                }
+            }
+        }
+
+        [TestMethod]
+        public void ExpectRotatingWalkExampleToGiveAdequateConsoleOutput_WithIncorrectInput()
+        {
+            using (StringReader input = new StringReader("-3\n101\n1\n"))
+            {
+                Console.SetIn(input);
+                using (StringWriter output = new StringWriter())
+                {
+                    Console.SetOut(output);
+
+                    RotatingWalkExample.Main();
+
+                    Assert.AreEqual(expectedConsoleOutputIncorrectInput, output.ToString());
+                }
+            }
         }
 
         [TestMethod]
