@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="_01.AbstractFactory.Factories.AmericanSoldierFactory">
+    <Position X="4.75" Y="2.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Factories\AmericanSoldierFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_01.AbstractFactory.Factories.BulgarianSoldierFactory">
+    <Position X="7.75" Y="2.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Factories\BulgarianSoldierFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_01.AbstractFactory.Factories.SoldierFactory">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Factories\SoldierFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_01.AbstractFactory.SoldierRecruitment">
+    <Position X="3.75" Y="4.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>SoldierRecruitment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_01.AbstractFactory.Soldiers.FighterPilot">
+    <Position X="2.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Soldiers\FighterPilot.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_01.AbstractFactory.Soldiers.Marine">
+    <Position X="0.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Soldiers\Marine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_01.AbstractFactory.Soldiers.Soldier">
+    <Position X="1.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>Soldiers\Soldier.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="_02.Builder.Builders.DoctorBuilder">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAEAAAAAAAAAAAAAAAAAEAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Builders\DoctorBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_02.Builder.Builders.ProgrammerBuilder">
+    <Position X="2.5" Y="3.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAEAAAAAAAAAAAAAAAAAEAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Builders\ProgrammerBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_02.Builder.Builders.WorkerBuilder">
+    <Position X="1.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACABEAAAAAAAAAAAAAAAAAEAAAAAABAAABAAAAAAA=</HashCode>
+      <FileName>Builders\WorkerBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_02.Builder.Directors.WorkerConstructor">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Directors\WorkerConstructor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_02.Builder.Worker">
+    <Position X="5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAABAAAAAAAAAEAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Worker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
