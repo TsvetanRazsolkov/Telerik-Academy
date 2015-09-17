@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="_02.Decorator.ArmorDecorator">
+    <Position X="8" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>ArmorDecorator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_02.Decorator.MilitaryVehicle">
+    <Position X="6.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAJAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MilitaryVehicle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_02.Decorator.MVDecorator">
+    <Position X="9" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAIBAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MVDecorator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_02.Decorator.Ship">
+    <Position X="3.5" Y="2.75" Width="1.5" />
+    <InheritanceLine Type="_02.Decorator.MilitaryVehicle" FixedToPoint="true">
+      <Path>
+        <Point X="7.5" Y="2.247" />
+        <Point X="7.5" Y="2.45" />
+        <Point X="4.312" Y="2.45" />
+        <Point X="4.312" Y="2.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ship.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_02.Decorator.Truck">
+    <Position X="5.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Truck.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_02.Decorator.WeaponDecorator">
+    <Position X="10.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAIAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WeaponDecorator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_02.Decorator.Armors.Armor" Collapsed="true">
+    <Position X="9.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAIAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Armors\Armor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_02.Decorator.Armors.HeavyArmor" Collapsed="true">
+    <Position X="8.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Armors\HeavyArmor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_02.Decorator.Armors.LightArmor" Collapsed="true">
+    <Position X="10.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Armors\LightArmor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_02.Decorator.Weapons.HeavyWeapon" Collapsed="true">
+    <Position X="3.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>Weapons\HeavyWeapon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_02.Decorator.Weapons.LightWeapon" Collapsed="true">
+    <Position X="5.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Weapons\LightWeapon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_02.Decorator.Weapons.Weapon" Collapsed="true">
+    <Position X="4.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Weapons\Weapon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
