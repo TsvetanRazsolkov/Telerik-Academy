@@ -1,5 +1,5 @@
 
-## Facade
+## Decorator
 
 Описание
 
