@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="_01.TemplateMethod.BulgarianFootballPlayer">
+    <Position X="2" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAgAAAAAAAAAAAAACAEAAA=</HashCode>
+      <FileName>BulgarianFootballPlayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_01.TemplateMethod.FootballPlayer">
+    <Position X="3.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAEAAAQgAAAAAAAAAAAAACAAgAA=</HashCode>
+      <FileName>FootballPlayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_01.TemplateMethod.GermanFootballPlayer">
+    <Position X="4.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAgAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>GermanFootballPlayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
