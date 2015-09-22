@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="_05.ChainOfResponsibillities.GalacticHero">
+    <Position X="4.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAAAIAQAAABAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>GalacticHero.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_05.ChainOfResponsibillities.Jedi">
+    <Position X="6.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Jedi.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_05.ChainOfResponsibillities.MasterJedi">
+    <Position X="2" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MasterJedi.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_05.ChainOfResponsibillities.RebelFighter">
+    <Position X="4.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RebelFighter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_05.ChainOfResponsibillities.Villain">
+    <Position X="8.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Villain.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
