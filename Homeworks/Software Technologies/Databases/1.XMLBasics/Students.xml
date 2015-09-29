@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="StudentsStylesheet.xsl" ?>
-<students>
+<students xmlns="urn:students"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="urn:students StudentsSchema.xsd"
+>
   <student>
     <name>Pesho</name>
     <gender>male</gender>
