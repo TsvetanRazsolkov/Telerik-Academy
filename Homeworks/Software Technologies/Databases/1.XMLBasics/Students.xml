@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="StudentsStylesheet.xsl" ?>
+<students>
+  <student>
+    <name>Pesho</name>
+    <gender>male</gender>
+    <birthDate>1999-09-19</birthDate>
+    <phone>555123456</phone>
+    <email>pesho@pesho.com</email>
+    <course>1</course>
+    <specialty>Web</specialty>
+    <facultyNumber>123456</facultyNumber>
+    <exams>
+      <exam>
+        <name>OOP</name>
+        <tutor>Nikolay Kostov</tutor>
+        <examScore>50</examScore>
+      </exam>
+      <exam>
+        <name>HQC</name>
+        <tutor>Nikolay Kostov</tutor>
+        <examScore>40</examScore>
+      </exam>
+    </exams>
+    <enrollmentInfo>
+      <enrollmentDate>2014-10-15</enrollmentDate>
+      <examScore>70</examScore>
+      <teacherEndorsement>Don't know what this is :)</teacherEndorsement>
+    </enrollmentInfo>
+  </student>
+  <student>
+    <name>John Hohn</name>
+    <gender>male</gender>
+    <birthDate>1999-09-09</birthDate>
+    <phone>555123456</phone>
+    <email>john@hohn.com</email>
+    <course>1</course>
+    <specialty>Mobile</specialty>
+    <facultyNumber>654321</facultyNumber>
+    <exams>
+      <exam>
+        <name>JS OOP</name>
+        <tutor>Doncho Minkov</tutor>
+        <examScore>50</examScore>
+      </exam>
+      <exam>
+        <name>JS Applications</name>
+        <tutor>Doncho Minkov</tutor>
+        <examScore>40</examScore>
+      </exam>
+    </exams>
+    <enrollmentInfo>
+      <enrollmentDate>2014-10-15</enrollmentDate>
+      <examScore>60</examScore>
+      <teacherEndorsement>Don't know what this is :)</teacherEndorsement>
+    </enrollmentInfo>
+  </student>
+</students>

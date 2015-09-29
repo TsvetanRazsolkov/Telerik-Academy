@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="urn:students"
+    elementFormDefault="qualified"
+    xmlns="urn:students"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+  <xs:element name="students">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="student" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="student">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="name" type="xs:string"/>
+        <xs:element ref="gender"/>
+        <xs:element name="birthDate" type="xs:date"/>
+        <xs:element ref="phone"/>
+        <xs:element ref="email"/>
+        <xs:element name="course" type="xs:string"/>
+        <xs:element ref="specialty"/>
+        <xs:element name="facultyNumber" type="xs:string"/>
+        <xs:element ref="exams"/>
+        <xs:element ref="enrollmentInfo"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="enrollmentInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="enrollmentDate" type="xs:date"/>
+        <xs:element ref="examScore"/>
+        <xs:element name="teacherEndorsement" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="exams">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="exam" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="exam">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="name" type="xs:string"/>
+        <xs:element name="tutor" type="xs:string"/>
+        <xs:element ref="examScore"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="examScore">
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:minInclusive value="0"/>
+        <xs:maxInclusive value="100"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+
+
+  <xs:element name="gender">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:pattern value="male|female"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+
+  <xs:element name="phone">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:pattern value="[0-9]{9}"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+
+  <xs:element name="email">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:pattern value="([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+
+  <xs:element name="specialty">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="Web"/>
+        <xs:enumeration value="Mobile"/>
+        <xs:enumeration value="QA"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+</xs:schema>
