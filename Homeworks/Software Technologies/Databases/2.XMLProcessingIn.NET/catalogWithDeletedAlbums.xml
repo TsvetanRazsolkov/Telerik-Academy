@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<albums>
+  <album>
+    <name>Songs for the table</name>
+    <artist>Keranov</artist>
+    <year>2010</year>
+    <producer>Pesho</producer>
+    <price>15</price>
+    <songs>
+      <song>
+        <title>Te sa zeleni</title>
+        <duration>4</duration>
+      </song>
+      <song>
+        <title>Te sa cherveni</title>
+        <duration>3</duration>
+      </song>
+    </songs>
+  </album>
+  <album>
+    <name>Songs from someone who is not Keranov</name>
+    <artist>John Hohn</artist>
+    <year>2013</year>
+    <producer>Pesho</producer>
+    <price>18</price>
+    <songs>
+      <song>
+        <title>Gosho is pich</title>
+        <duration>4</duration>
+      </song>
+      <song>
+        <title>Pesho rullz!</title>
+        <duration>3</duration>
+      </song>
+    </songs>
+  </album>
+</albums>
