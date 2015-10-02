@@ -5,10 +5,12 @@
 
  
 
- 1. - What database models do you know?
+ 1.- What database models do you know?
 
  
  A database model is a type of data model that determines the logical structure of a database and fundamentally determines in which manner data can be stored, organized, and manipulated. 
+ 
+
  - Hierarchical database model - A hierarchical database model is a data model in which the data is organized into a tree-like structure. The data is stored as records which are connected to one another through links. A record is a collection of fields, with each field containing only one value. The entity type of a record defines which fields the record contains. The hierarchical database model mandates that each child record has only one parent, whereas each parent record can have one or more child records. In order to retrieve data from a hierarchical database the whole tree needs to be traversed starting from the root node. 
  - Network model - The network model is a database model conceived as a flexible way of representing objects and their relationships. While the hierarchical database model structures data as a tree of records, with each record having one parent record and many children, the network model allows each record to have multiple parent and child records, forming a generalized graph structure.
  - Relational model - In the relational model of a database, all data is represented in terms of tuples, grouped into relations.
