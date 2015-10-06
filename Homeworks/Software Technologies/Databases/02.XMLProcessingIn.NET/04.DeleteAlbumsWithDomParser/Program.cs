@@ -10,16 +10,19 @@
             var catalog = new XmlDocument();
             catalog.Load("../../../catalog.xml");
 
-            var albums = catalog.DocumentElement;
-
-            foreach (XmlNode album in albums)
+            var root = catalog.DocumentElement;
+            var albums = root.GetElementsByTagName("album");
+			
+            for (int i = albums.Count - 1; i >= 0; i--)
             {
-                var albumPrice = decimal.Parse(album["price"].InnerText);
+                var album = albums[i];
+				
+                decimal albumPrice = decimal.Parse(album["price"].InnerText);
                 if (albumPrice > 20)
                 {
-                    albums.RemoveChild(album);
+                    album.ParentNode.RemoveChild(album);
                 }
-            }
+            }   
 
             catalog.Save("../../../catalogWithDeletedAlbums.xml");             
         }
