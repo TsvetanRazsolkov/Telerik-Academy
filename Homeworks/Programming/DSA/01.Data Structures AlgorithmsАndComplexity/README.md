@@ -38,7 +38,7 @@
       return count;
   }
   ```
-  n*m - the outer loop will be executed n-times. For each row if the element at column 0 is even the inner loop will be executed m-times. Worst-case scenario - n*m. Bes-case scenario which is rarely relevant - O(n) - linear complexity, we discard that one. Average-case - n*m/2, in which case we can neglect the constant, so the number of operations of the code above can be said to be n*m (O(n <sup>2</sup>));
+  `n*m` - the outer loop will be executed n-times. For each row if the element at column 0 is even the inner loop will be executed m-times. Worst-case scenario - `n*m`. Best-case scenario which is rarely relevant - O(n) - linear complexity, we discard that one. Average-case - `n*m/2`, in which case we can neglect the constant, so the number of operations of the code above can be said to be `n*m` (O(n <sup>2</sup>));
 
 3. **(*) What is the expected running time of the following C# code?**
   - Explain why using Markdown.
@@ -57,4 +57,4 @@
   
   Console.WriteLine(CalcSum(matrix, 0));
   ```
-  n*m - with the remark, that the code above is valid only when n = m и  raw <= m-1. If not an IndexOutOfRangeException will be thrown. The cicle will be executed n-times, and the method itself will be called recursively m-times, so n*m  - O(n <sup>2</sup>) complexity.
+  `n*m` - with the remark, that the code above is valid only when n = m и  raw <= m-1. If not an IndexOutOfRangeException will be thrown. The cicle will be executed n-times, and the method itself will be called recursively m-times, so `n*m`  - O(n <sup>2</sup>) complexity.
