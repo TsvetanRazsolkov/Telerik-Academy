@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.StackImplementation", "1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13.QueueImplementation", "13.QueueImplementation\13.QueueImplementation.csproj", "{A7C0A99B-000D-4919-B157-77DC856D374C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14.Labyrinth", "14.Labyrinth\14.Labyrinth.csproj", "{F766EB4D-A87E-4EF0-BF19-0FE3B1FC2D23}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{A7C0A99B-000D-4919-B157-77DC856D374C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7C0A99B-000D-4919-B157-77DC856D374C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A7C0A99B-000D-4919-B157-77DC856D374C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F766EB4D-A87E-4EF0-BF19-0FE3B1FC2D23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F766EB4D-A87E-4EF0-BF19-0FE3B1FC2D23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F766EB4D-A87E-4EF0-BF19-0FE3B1FC2D23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F766EB4D-A87E-4EF0-BF19-0FE3B1FC2D23}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
