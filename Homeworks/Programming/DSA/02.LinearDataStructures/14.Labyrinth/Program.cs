@@ -36,13 +36,13 @@ namespace _14.Labyrinth
 
             FindStart(ref startRow, ref startCol);
 
-            Solve(startRow, startCol);
+            SolveWithBFS(startRow, startCol);
             isSolved = true;
 
             PrintLabyrinth(labyrinth, isSolved);
         }
 
-        private static void Solve(int startRow, int startCol)
+        private static void SolveWithBFS(int startRow, int startCol)
         {
             var visited = new Queue<Cell>();
             var startCell = new Cell(startRow, startCol, 0);
