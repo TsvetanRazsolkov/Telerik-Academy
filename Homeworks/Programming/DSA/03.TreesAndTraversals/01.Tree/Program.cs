@@ -12,6 +12,7 @@ namespace _01.Tree
 {
     using System;
     using System.Collections.Generic;
+    using System.IO;
     using System.Linq;
 
     public class Program
@@ -27,6 +28,7 @@ namespace _01.Tree
 
         public static void Main()
         {
+            Console.SetIn(new StringReader(Input));
             var nodes = ReadInput();
 
             // First three tasks can be solved by just analyzing the input.
