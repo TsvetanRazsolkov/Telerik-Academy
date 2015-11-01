@@ -73,6 +73,11 @@ namespace _12.StackImplementation
         {
             this.index = 0;
             this.Count = 0;
+
+            // Or to save(perhaps) a little memory:
+            // this.index = 0;
+            // this.Count = 0;
+            // this.values = new T[InitialCapacity];
         }
 
         private void Resize()
