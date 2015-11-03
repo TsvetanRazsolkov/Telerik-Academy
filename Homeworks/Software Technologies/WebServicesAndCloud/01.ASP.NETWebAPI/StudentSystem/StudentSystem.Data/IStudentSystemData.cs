@@ -11,6 +11,8 @@
 
         IGenericRepository<Test> Tests { get; }
 
+        IGenericRepository<Homework> Homeworks { get; }
+
         void SaveChanges();
     }
 }

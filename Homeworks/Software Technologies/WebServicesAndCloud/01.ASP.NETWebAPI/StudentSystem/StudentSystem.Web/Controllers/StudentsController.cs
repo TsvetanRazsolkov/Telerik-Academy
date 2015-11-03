@@ -78,6 +78,8 @@
             }
 
             // Same for the other properties in the model - it's a bit late and the idea is clear so... :)
+            student.FirstName = string.IsNullOrEmpty(studentModel.FirstName) ? student.FirstName : studentModel.FirstName;
+            student.LastName = string.IsNullOrEmpty(studentModel.LastName) ? student.LastName : studentModel.LastName;
             student.AdditionalInformation.Address = string.IsNullOrEmpty(studentModel.Address) ? student.AdditionalInformation.Address : studentModel.Address;
 
             this.Data.Students.Update(student);
