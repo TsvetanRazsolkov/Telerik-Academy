@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08.CheckExistingPath", "08.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09.LargestAreaOfAdjacentEmptyCells", "09.LargestAreaOfAdjacentEmptyCells\09.LargestAreaOfAdjacentEmptyCells.csproj", "{12DF227D-78B7-460A-B9C3-62610639C728}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10.AllAreasOfPassableCellsInMatrix", "10.AllAreasOfPassableCellsInMatrix\10.AllAreasOfPassableCellsInMatrix.csproj", "{63F617BC-616E-4A87-8C7C-1A58EB552048}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{12DF227D-78B7-460A-B9C3-62610639C728}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12DF227D-78B7-460A-B9C3-62610639C728}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12DF227D-78B7-460A-B9C3-62610639C728}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63F617BC-616E-4A87-8C7C-1A58EB552048}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63F617BC-616E-4A87-8C7C-1A58EB552048}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63F617BC-616E-4A87-8C7C-1A58EB552048}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63F617BC-616E-4A87-8C7C-1A58EB552048}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

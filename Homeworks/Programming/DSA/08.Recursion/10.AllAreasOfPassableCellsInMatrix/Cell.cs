@@ -1,7 +1,5 @@
-﻿namespace _09.LargestAreaOfAdjacentEmptyCells
+﻿namespace _10.AllAreasOfPassableCellsInMatrix
 {
-    using System;
-
     public class Cell
     {
         public Cell(int row, int col)
@@ -17,6 +15,13 @@
         public override string ToString()
         {
             return string.Format("({0} {1})", this.Row, this.Col);
+        }
+
+        public override bool Equals(object obj)
+        {
+            var other = obj as Cell;
+
+            return this.Row.CompareTo(other.Row) == 0 && this.Col.CompareTo(other.Col) == 0;
         }
     }
 }
