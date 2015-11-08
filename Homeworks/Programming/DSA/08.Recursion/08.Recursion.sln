@@ -23,6 +23,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09.LargestAreaOfAdjacentEmp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10.AllAreasOfPassableCellsInMatrix", "10.AllAreasOfPassableCellsInMatrix\10.AllAreasOfPassableCellsInMatrix.csproj", "{63F617BC-616E-4A87-8C7C-1A58EB552048}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.PermutationsWithRepetition", "11.PermutationsWithRepetition\11.PermutationsWithRepetition.csproj", "{3EE92A2C-EA78-4CA0-9F21-32A45F30BC86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.QueensPuzzle", "12.QueensPuzzle\12.QueensPuzzle.csproj", "{C2CBE1ED-1111-4F04-9B67-3339360BE918}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +73,14 @@ Global
 		{63F617BC-616E-4A87-8C7C-1A58EB552048}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63F617BC-616E-4A87-8C7C-1A58EB552048}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63F617BC-616E-4A87-8C7C-1A58EB552048}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EE92A2C-EA78-4CA0-9F21-32A45F30BC86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EE92A2C-EA78-4CA0-9F21-32A45F30BC86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EE92A2C-EA78-4CA0-9F21-32A45F30BC86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EE92A2C-EA78-4CA0-9F21-32A45F30BC86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2CBE1ED-1111-4F04-9B67-3339360BE918}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2CBE1ED-1111-4F04-9B67-3339360BE918}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2CBE1ED-1111-4F04-9B67-3339360BE918}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2CBE1ED-1111-4F04-9B67-3339360BE918}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
