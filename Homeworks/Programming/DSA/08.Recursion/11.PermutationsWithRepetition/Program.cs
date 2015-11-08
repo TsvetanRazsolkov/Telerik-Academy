@@ -9,7 +9,7 @@ Example: the multi-set {1, 3, 5, 5} has the following 12 unique permutations:
   { 5, 5, 1, 3 }  { 5, 5, 3, 1 }
 Ensure your program efficiently avoids duplicated permutations.
 Test it with { 1, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5 }.
-Hint: Permutations with repetition*/
+ * */
 namespace _11.PermutationsWithRepetition
 {
     using System;
@@ -21,7 +21,7 @@ namespace _11.PermutationsWithRepetition
 
     public class Program
     {
-        public static HashSet<string> answer = new HashSet<string>();
+        public static HashSet<string> allPermutations = new HashSet<string>();
 
         public static int[] multiSet = new int[] { 1, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5 };
 
@@ -29,15 +29,16 @@ namespace _11.PermutationsWithRepetition
         {
             var sw = new Stopwatch();
             sw.Start();
+            //Array.Sort(multiSet);
             Permute(0);
             Console.WriteLine("Time: {0}", sw.Elapsed);
 
-            Console.WriteLine(string.Join(Environment.NewLine, answer));
+            Console.WriteLine(string.Join(Environment.NewLine, allPermutations));
         }
 
         public static void Permute(int startingPosition = 0)
         {
-            answer.Add(string.Join(", ", multiSet));
+            allPermutations.Add(string.Join(", ", multiSet));
             if (startingPosition < multiSet.Length)
             {
                 for (int i = multiSet.Length - 2; i >= startingPosition; i--)
