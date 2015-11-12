@@ -78,9 +78,7 @@
             var foundProducts = productsByPrice
                 .Where(d => fromPrice <= d.Key && d.Key <= toPrice)
                 .SelectMany(x => x.Value)
-                .OrderBy(p => p.Name)
-                .ThenBy(p => p.Producer)
-                .ThenBy(p => p.Price);
+                .OrderBy(p => p.ToString());
 
             if (foundProducts.Count() == 0)
             {
@@ -213,7 +211,9 @@
         }
 
         internal class Product : IComparable<Product>
-        {
+        {		
+			private string toStringCache;
+			
             public Product(string name, decimal price, string producer)
             {
                 this.Name = name;
@@ -234,7 +234,12 @@
 
             public override string ToString()
             {
-                return string.Format("{{{0};{1};{2}}}", this.Name, this.Producer, this.Price.ToString("F2"));
+				if(string.IsNullOrEmpty(this.toStringCache))
+				{
+					this.toStringCache = string.Format("{{{0};{1};{2}}}", this.Name, this.Producer, this.Price.ToString("F2"));
+				}
+				
+                return this.toStringCache;
             }
         }
     }
