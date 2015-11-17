@@ -77,7 +77,7 @@ namespace _05.ZigZagSequences
             }
         }
 
-        //// Solution for 80 points:
+        //// Solution for 80 points - this one is mine, the above is the author's solution written just for exercise:
         //static void Main(string[] args)
         //{
         //    var inputNumbers = Console.ReadLine().Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries)

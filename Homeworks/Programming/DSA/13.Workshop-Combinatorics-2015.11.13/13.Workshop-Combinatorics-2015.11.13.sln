@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryTrees", "BinaryTrees\BinaryTrees.csproj", "{A5E43D37-3D88-41CD-B086-8CDE341116A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Precission", "Precission\Precission.csproj", "{9966B859-F94F-4B22-B9E1-362E76E7B8F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Songs", "Songs\Songs.csproj", "{12BE027B-7052-4A02-9095-52E1B8F75300}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A5E43D37-3D88-41CD-B086-8CDE341116A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5E43D37-3D88-41CD-B086-8CDE341116A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5E43D37-3D88-41CD-B086-8CDE341116A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5E43D37-3D88-41CD-B086-8CDE341116A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9966B859-F94F-4B22-B9E1-362E76E7B8F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9966B859-F94F-4B22-B9E1-362E76E7B8F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9966B859-F94F-4B22-B9E1-362E76E7B8F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9966B859-F94F-4B22-B9E1-362E76E7B8F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12BE027B-7052-4A02-9095-52E1B8F75300}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12BE027B-7052-4A02-9095-52E1B8F75300}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12BE027B-7052-4A02-9095-52E1B8F75300}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12BE027B-7052-4A02-9095-52E1B8F75300}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
