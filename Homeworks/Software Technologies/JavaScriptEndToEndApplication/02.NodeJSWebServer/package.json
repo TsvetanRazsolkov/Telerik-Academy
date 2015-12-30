@@ -1,0 +1,15 @@
+{
+  "name": "file-upload-system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bai Petko",
+  "license": "ISC",
+  "dependencies": {
+    "formidable": "^1.0.17",
+    "node-uuid": "^1.4.7"
+  }
+}
